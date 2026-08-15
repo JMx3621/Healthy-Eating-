@@ -23,7 +23,7 @@ function draw(x,y,s){
   if(dd<=s*0.085) return [...DOT,255];
   return [...BG,255];
 }
-for(const s of [192,512]) fs.writeFileSync(`docs/icon-${s}.png`,png(s,draw));
+for(const s of [192,512]) fs.writeFileSync(`icon-${s}.png`,png(s,draw));
 // maskable needs 20% safe padding — shrink the art
 function drawMask(x,y,s){
   const cx=s/2,cy=s/2,d=Math.hypot(x-cx,y-cy);
@@ -31,5 +31,5 @@ function drawMask(x,y,s){
   if(d<=s*0.067) return [...DOT,255];
   return [...BG,255];
 }
-fs.writeFileSync('docs/icon-maskable-512.png',png(512,drawMask));
-console.log('icons written:',fs.readdirSync('docs').filter(f=>f.endsWith('.png')).join(', '));
+fs.writeFileSync('icon-maskable-512.png',png(512,drawMask));
+console.log('icons written:',fs.readdirSync('.').filter(f=>f.endsWith('.png')).join(', '));

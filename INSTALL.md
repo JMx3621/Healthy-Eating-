@@ -14,14 +14,25 @@ This gives you a genuine installed app: its own icon in the app drawer, its own 
 
 1. Go to `https://github.com/JMx3621/Healthy-Eating-/settings/pages`
 2. Under **Source**, choose **Deploy from a branch**
-3. Branch: `claude/personalized-meal-plan-nnzpo1` — Folder: **`/docs`**
-4. Click **Save**, then wait 1–2 minutes for the first build
+3. Branch: `claude/personalized-meal-plan-nnzpo1` — Folder: **`/ (root)`**
+4. Click **Save**
 
-Your app is then live at:
+Then wait. The first build takes **1–3 minutes** and the URL returns 404 until it finishes — that 404 is normal, not a mistake.
+
+To watch it: the **Actions** tab shows a `pages build and deployment` run. Green tick means live. You can also reload the Pages settings page — once it has built, a green banner appears at the top with the live link.
+
+Your app is then at:
 
 ```
 https://jmx3621.github.io/Healthy-Eating-/
 ```
+
+### If it still 404s
+
+- **Did you press Save?** Selecting the branch alone does nothing until you do.
+- **Give it three minutes.** A 404 immediately after saving means nothing.
+- **Check the Actions tab** for a failed build. `.nojekyll` sits in the root specifically to stop Jekyll from trying to process the site, which is the usual cause of a failure.
+- **Confirm the folder is `/ (root)`,** not `/docs`. There is no `docs` folder any more — `index.html` lives at the top level.
 
 **Then on your phone:**
 
@@ -33,7 +44,7 @@ That is it. It now behaves like any other app on the phone.
 
 ### Why it works offline
 
-`docs/sw.js` is a service worker that caches the whole app on first load and serves from cache afterwards, refreshing quietly in the background whenever you do have signal. So the plan, recipes and shopping lists are available in a supermarket basement.
+`sw.js` is a service worker that caches the whole app on first load and serves from cache afterwards, refreshing quietly in the background whenever you do have signal. So the plan, recipes and shopping lists are available in a supermarket basement.
 
 ### Where your data lives
 
@@ -51,10 +62,11 @@ The honest comparison: an installed PWA matches a native app for everything this
 
 | Path | What it is |
 |---|---|
-| `docs/index.html` | The app, built and self-contained |
-| `docs/manifest.webmanifest` | Makes it installable |
-| `docs/sw.js` | Offline caching |
-| `docs/icon-*.png` | Launcher icons |
+| `index.html` | The app, built and self-contained — what GitHub Pages serves |
+| `manifest.webmanifest` | Makes it installable |
+| `sw.js` | Offline caching |
+| `icon-*.png` | Launcher icons |
+| `.nojekyll` | Stops GitHub trying to run Jekyll over the site |
 | `app/data.js` | All plan content — menus, recipes, training, gut protocol |
 | `app/shell.html` | App template with a `/*__DATA__*/` marker |
 | `app/build.js` | Inlines data into the template |
@@ -65,8 +77,9 @@ The honest comparison: an installed PWA matches a native app for everything this
 Rebuild after editing anything in `app/`:
 
 ```bash
-node app/build.js        # -> eight-week-app.html
+node app/build.js                # -> eight-week-app.html AND index.html
 node app/gen-ics.js 2026-08-16   # -> eight-week-kitchen.ics
+node app/icons.js                # -> icon-*.png
 ```
 
-`docs/index.html` is `eight-week-app.html` wrapped in a full HTML document with the manifest and service-worker registration added.
+`build.js` emits both outputs from the same source: `eight-week-app.html` is body-only for publishing as an Artifact, and `index.html` is the same app wrapped in a full HTML document with the manifest and service-worker registration.
