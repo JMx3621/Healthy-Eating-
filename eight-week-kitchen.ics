@@ -8,75 +8,6 @@ BEGIN:VEVENT
 UID:8wk-1-20260816T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260816T070000
-DTEND:20260816T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-2-20260816T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260816T123000
-DTEND:20260816T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-3-20260816T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260816T183000
-DTEND:20260816T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-4-20260816T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260816T093000
-DTEND:20260816T101500
-SUMMARY:Shop · block 1 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 1 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-5-20260816T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260816T100000
-DTEND:20260816T115000
-SUMMARY:Meal prep · Foundation
-DESCRIPTION:2½ lb chicken thighs — half Greek (lemon\, garlic\, oregano)\,
-  half Tex-Mex (cumin\, chili\, paprika\, lime)\nVegetable tray: 2 broccol
- i crowns\, 2 bell peppers\, 1 red onion\n2 cups rice\nTurkey chili — 5 se
- rvings\, freeze 2\n8 hard-boiled eggs\nGarlic-lemon yogurt sauce + ginger
- -scallion soy sauce\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Foundation
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-6-20260816T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260816T070000
 DTEND:20260816T070500
 SUMMARY:Weigh in
 DESCRIPTION:Same morning\, same conditions\, before breakfast.
@@ -87,88 +18,52 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-7-20260816T103000@eightweekkitchen
+UID:8wk-2-20260816T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260816T103000
-DTEND:20260816T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260816T093000
+DTEND:20260816T101500
+SUMMARY:Shop · block 1 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 1 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-8-20260816T153000@eightweekkitchen
+UID:8wk-3-20260816T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260816T153000
-DTEND:20260816T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260816T100000
+DTEND:20260816T115000
+SUMMARY:Meal prep · Settle
+DESCRIPTION:Garlic-infused oil — make this first\, everything else uses it
+ \n2½ lb chicken thighs — half Greek (lemon\, oregano\, garlic oil)\, half
+  cumin-lime\nVegetable tray: 2 zucchini\, 3 red peppers\, 4 carrots\n2 cu
+ ps rice\nTurkey chili\, no beans — 5 servings\, freeze 2\n8 hard-boiled e
+ ggs\nLemon-yogurt sauce + ginger-scallion soy sauce\nFresh tomato-scallio
+ n salsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-9-20260817T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260817T070000
-DTEND:20260817T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-10-20260817T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260817T123000
-DTEND:20260817T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-11-20260817T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260817T183000
-DTEND:20260817T191000
-SUMMARY:Dinner · Ginger shrimp & edamame stir-fry
-DESCRIPTION:500 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Ginger shrimp & edamame stir-fry
+DESCRIPTION:Meal prep · Settle
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-12-20260817T171500@eightweekkitchen
+UID:8wk-4-20260817T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260817T171500
 DTEND:20260817T175500
 SUMMARY:Week 1 · Strength A
-DESCRIPTION:2 sets × 10 reps · rest 90s\n\n• Goblet squat — One dumbbell h
- eld at your chest. Sit down between your knees\, chest tall. Heels stay d
- own.\n• Dumbbell floor press — On your back on the floor\, knees bent. El
- bows stop when they touch the ground — that is the depth.\n• Romanian dea
- dlift — Dumbbells in front of your thighs. Push your hips BACK\, not down
- . Stop when you feel the hamstrings\, not when you reach the floor.\n• Sh
- oulder press — Seated or standing. Ribs down\, do not arch your lower bac
- k to get the weight up.\n• Plank — Squeeze your glutes. Hips level with s
- houlders. Stop the set when the hips start to sag\, not when the clock sa
- ys so.\n\n2 sets of 10. Use 10–15 lb\, or no weight at all if the movemen
- t feels awkward. You should finish every set feeling like you had 4 more 
- reps in you.
+DESCRIPTION:2 sets × 10 · rest 90s\n\n• Goblet squat — One dumbbell at you
+ r chest. Sit down between your knees\, chest tall\, heels down.\n• Dumbbe
+ ll floor press — On your back\, knees bent. Elbows stop when they touch t
+ he floor — that is the depth.\n• Romanian deadlift — Push your hips BACK\
+ , not down. Stop when you feel the hamstrings\, not when you reach the fl
+ oor.\n• Shoulder press — Ribs down. Do not arch your lower back to get th
+ e weight up.\n• Plank — Squeeze your glutes\, hips level with shoulders. 
+ The set ends when the hips sag\, not when the clock says.\n\n2 sets of 10
+ . Use 10–15 lb\, or nothing at all if a movement feels awkward. Finish ev
+ ery set feeling like you had 4 more in you.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 1 · Strength A
@@ -176,78 +71,13 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-13-20260817T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260817T103000
-DTEND:20260817T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-14-20260817T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260817T153000
-DTEND:20260817T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-15-20260818T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260818T070000
-DTEND:20260818T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-16-20260818T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260818T123000
-DTEND:20260818T130500
-SUMMARY:Lunch · Tex-Mex chicken bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tex-Mex chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-17-20260818T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260818T183000
-DTEND:20260818T191000
-SUMMARY:Dinner · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Turkey chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-18-20260818T073000@eightweekkitchen
+UID:8wk-5-20260818T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260818T073000
 DTEND:20260818T081500
 SUMMARY:Week 1 · Walk 20 min
-DESCRIPTION:3.0 mph\, 0% incline. Conversational — you should be able to t
- alk in full sentences.
+DESCRIPTION:3.0 mph\, 0% incline. You should be able to talk in full sente
+ nces.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 1 · Walk 20 min
@@ -255,153 +85,21 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-19-20260818T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260818T103000
-DTEND:20260818T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-20-20260818T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260818T153000
-DTEND:20260818T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-21-20260819T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260819T070000
-DTEND:20260819T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-22-20260819T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260819T123000
-DTEND:20260819T130500
-SUMMARY:Lunch · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Turkey chili
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-23-20260819T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260819T183000
-DTEND:20260819T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-24-20260819T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260819T103000
-DTEND:20260819T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-25-20260819T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260819T153000
-DTEND:20260819T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-26-20260820T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260820T070000
-DTEND:20260820T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-27-20260820T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260820T123000
-DTEND:20260820T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-28-20260820T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260820T183000
-DTEND:20260820T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-29-20260820T171500@eightweekkitchen
+UID:8wk-6-20260820T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260820T171500
 DTEND:20260820T175500
 SUMMARY:Week 1 · Strength B
-DESCRIPTION:2 sets × 10 reps · rest 90s\n\n• Bent-over row — Hinge to abou
- t 45°\, back flat. Pull the dumbbells to your hips\, not your chest. Paus
- e for a beat at the top.\n• Split squat — One foot forward\, one back\, l
- ong stance. Drop straight down. Do all reps one side\, then the other.\n•
-  Glute bridge — Dumbbell across your hips. Drive through your heels\, squ
- eeze hard at the top for a full second.\n• Curl + overhead extension — Cu
- rl up\, then press overhead and lower behind your head. One continuous mo
- vement\, no rest between.\n• Dead bug — On your back\, arms up\, knees at
-  90°. Lower opposite arm and leg slowly. Lower back stays glued to the fl
- oor.\n\n2 sets of 10. Use 10–15 lb\, or no weight at all if the movement 
- feels awkward. You should finish every set feeling like you had 4 more re
- ps in you.
+DESCRIPTION:2 sets × 10 · rest 90s\n\n• Bent-over row — Hinge to about 45°
+ \, back flat. Pull to your hips\, not your chest. Pause a beat at the top
+ .\n• Split squat — One foot forward\, one back\, long stance. Straight do
+ wn. All reps one side\, then the other.\n• Glute bridge — Dumbbell across
+  the hips. Drive through your heels\, squeeze hard for a full second at t
+ he top.\n• Curl + overhead extension — Curl up\, press overhead\, lower b
+ ehind your head. One continuous movement.\n• Dead bug — On your back\, ar
+ ms up\, knees at 90°. Lower opposite arm and leg slowly. Lower back stays
+  glued down.\n\n2 sets of 10. Use 10–15 lb\, or nothing at all if a movem
+ ent feels awkward. Finish every set feeling like you had 4 more in you.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 1 · Strength B
@@ -409,72 +107,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-30-20260820T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260820T103000
-DTEND:20260820T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-31-20260820T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260820T153000
-DTEND:20260820T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-32-20260821T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260821T070000
-DTEND:20260821T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-33-20260821T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260821T123000
-DTEND:20260821T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-34-20260821T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260821T183000
-DTEND:20260821T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-35-20260821T073000@eightweekkitchen
+UID:8wk-7-20260821T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260821T073000
 DTEND:20260821T081500
@@ -487,77 +120,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-36-20260821T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260821T103000
-DTEND:20260821T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-37-20260821T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260821T153000
-DTEND:20260821T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-38-20260822T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260822T070000
-DTEND:20260822T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-39-20260822T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260822T123000
-DTEND:20260822T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-40-20260822T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260822T183000
-DTEND:20260822T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-41-20260822T073000@eightweekkitchen
+UID:8wk-8-20260822T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260822T073000
 DTEND:20260822T081500
 SUMMARY:Week 1 · Walk 25 min
-DESCRIPTION:Outside if the weather allows. Pace does not matter.
+DESCRIPTION:Outside if you can. Pace does not matter.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 1 · Walk 25 min
@@ -565,102 +133,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-42-20260822T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260822T103000
-DTEND:20260822T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-43-20260822T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260822T153000
-DTEND:20260822T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-44-20260823T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260823T070000
-DTEND:20260823T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-45-20260823T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260823T123000
-DTEND:20260823T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-46-20260823T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260823T183000
-DTEND:20260823T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-47-20260823T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260823T093000
-DTEND:20260823T101500
-SUMMARY:Shop · block 1 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 1 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-48-20260823T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260823T100000
-DTEND:20260823T115000
-SUMMARY:Meal prep · Foundation
-DESCRIPTION:2½ lb chicken thighs — half Greek (lemon\, garlic\, oregano)\,
-  half Tex-Mex (cumin\, chili\, paprika\, lime)\nVegetable tray: 2 broccol
- i crowns\, 2 bell peppers\, 1 red onion\n2 cups rice\nTurkey chili — 5 se
- rvings\, freeze 2\n8 hard-boiled eggs\nGarlic-lemon yogurt sauce + ginger
- -scallion soy sauce\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Foundation
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-49-20260823T070000@eightweekkitchen
+UID:8wk-9-20260823T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260823T070000
 DTEND:20260823T070500
@@ -673,87 +146,52 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-50-20260823T103000@eightweekkitchen
+UID:8wk-10-20260823T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260823T103000
-DTEND:20260823T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260823T093000
+DTEND:20260823T101500
+SUMMARY:Shop · block 1 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 1 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-51-20260823T153000@eightweekkitchen
+UID:8wk-11-20260823T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260823T153000
-DTEND:20260823T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260823T100000
+DTEND:20260823T115000
+SUMMARY:Meal prep · Settle
+DESCRIPTION:Garlic-infused oil — make this first\, everything else uses it
+ \n2½ lb chicken thighs — half Greek (lemon\, oregano\, garlic oil)\, half
+  cumin-lime\nVegetable tray: 2 zucchini\, 3 red peppers\, 4 carrots\n2 cu
+ ps rice\nTurkey chili\, no beans — 5 servings\, freeze 2\n8 hard-boiled e
+ ggs\nLemon-yogurt sauce + ginger-scallion soy sauce\nFresh tomato-scallio
+ n salsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-52-20260824T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260824T070000
-DTEND:20260824T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-53-20260824T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260824T123000
-DTEND:20260824T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-54-20260824T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260824T183000
-DTEND:20260824T191000
-SUMMARY:Dinner · Ginger shrimp & edamame stir-fry
-DESCRIPTION:500 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Ginger shrimp & edamame stir-fry
+DESCRIPTION:Meal prep · Settle
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-55-20260824T171500@eightweekkitchen
+UID:8wk-12-20260824T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260824T171500
 DTEND:20260824T175500
 SUMMARY:Week 2 · Strength A
-DESCRIPTION:2 sets × 12 reps · rest 90s\n\n• Goblet squat — One dumbbell h
- eld at your chest. Sit down between your knees\, chest tall. Heels stay d
- own.\n• Dumbbell floor press — On your back on the floor\, knees bent. El
- bows stop when they touch the ground — that is the depth.\n• Romanian dea
- dlift — Dumbbells in front of your thighs. Push your hips BACK\, not down
- . Stop when you feel the hamstrings\, not when you reach the floor.\n• Sh
- oulder press — Seated or standing. Ribs down\, do not arch your lower bac
- k to get the weight up.\n• Plank — Squeeze your glutes. Hips level with s
- houlders. Stop the set when the hips start to sag\, not when the clock sa
- ys so.\n\n2 sets of 12. Same dumbbells as week 1. Adding reps before weig
- ht is what protects your joints in the first month.
+DESCRIPTION:2 sets × 12 · rest 90s\n\n• Goblet squat — One dumbbell at you
+ r chest. Sit down between your knees\, chest tall\, heels down.\n• Dumbbe
+ ll floor press — On your back\, knees bent. Elbows stop when they touch t
+ he floor — that is the depth.\n• Romanian deadlift — Push your hips BACK\
+ , not down. Stop when you feel the hamstrings\, not when you reach the fl
+ oor.\n• Shoulder press — Ribs down. Do not arch your lower back to get th
+ e weight up.\n• Plank — Squeeze your glutes\, hips level with shoulders. 
+ The set ends when the hips sag\, not when the clock says.\n\n2 sets of 12
+ \, same dumbbells. Adding reps before weight is what protects your joints
+  in the first month.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 2 · Strength A
@@ -761,72 +199,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-56-20260824T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260824T103000
-DTEND:20260824T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-57-20260824T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260824T153000
-DTEND:20260824T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-58-20260825T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260825T070000
-DTEND:20260825T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-59-20260825T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260825T123000
-DTEND:20260825T130500
-SUMMARY:Lunch · Tex-Mex chicken bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tex-Mex chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-60-20260825T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260825T183000
-DTEND:20260825T191000
-SUMMARY:Dinner · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Turkey chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-61-20260825T073000@eightweekkitchen
+UID:8wk-13-20260825T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260825T073000
 DTEND:20260825T081500
@@ -839,152 +212,21 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-62-20260825T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260825T103000
-DTEND:20260825T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-63-20260825T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260825T153000
-DTEND:20260825T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-64-20260826T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260826T070000
-DTEND:20260826T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-65-20260826T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260826T123000
-DTEND:20260826T130500
-SUMMARY:Lunch · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Turkey chili
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-66-20260826T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260826T183000
-DTEND:20260826T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-67-20260826T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260826T103000
-DTEND:20260826T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-68-20260826T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260826T153000
-DTEND:20260826T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-69-20260827T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260827T070000
-DTEND:20260827T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-70-20260827T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260827T123000
-DTEND:20260827T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-71-20260827T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260827T183000
-DTEND:20260827T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-72-20260827T171500@eightweekkitchen
+UID:8wk-14-20260827T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260827T171500
 DTEND:20260827T175500
 SUMMARY:Week 2 · Strength B
-DESCRIPTION:2 sets × 12 reps · rest 90s\n\n• Bent-over row — Hinge to abou
- t 45°\, back flat. Pull the dumbbells to your hips\, not your chest. Paus
- e for a beat at the top.\n• Split squat — One foot forward\, one back\, l
- ong stance. Drop straight down. Do all reps one side\, then the other.\n•
-  Glute bridge — Dumbbell across your hips. Drive through your heels\, squ
- eeze hard at the top for a full second.\n• Curl + overhead extension — Cu
- rl up\, then press overhead and lower behind your head. One continuous mo
- vement\, no rest between.\n• Dead bug — On your back\, arms up\, knees at
-  90°. Lower opposite arm and leg slowly. Lower back stays glued to the fl
- oor.\n\n2 sets of 12. Same dumbbells as week 1. Adding reps before weight
-  is what protects your joints in the first month.
+DESCRIPTION:2 sets × 12 · rest 90s\n\n• Bent-over row — Hinge to about 45°
+ \, back flat. Pull to your hips\, not your chest. Pause a beat at the top
+ .\n• Split squat — One foot forward\, one back\, long stance. Straight do
+ wn. All reps one side\, then the other.\n• Glute bridge — Dumbbell across
+  the hips. Drive through your heels\, squeeze hard for a full second at t
+ he top.\n• Curl + overhead extension — Curl up\, press overhead\, lower b
+ ehind your head. One continuous movement.\n• Dead bug — On your back\, ar
+ ms up\, knees at 90°. Lower opposite arm and leg slowly. Lower back stays
+  glued down.\n\n2 sets of 12\, same dumbbells. Adding reps before weight 
+ is what protects your joints in the first month.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 2 · Strength B
@@ -992,72 +234,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-73-20260827T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260827T103000
-DTEND:20260827T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-74-20260827T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260827T153000
-DTEND:20260827T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-75-20260828T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260828T070000
-DTEND:20260828T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-76-20260828T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260828T123000
-DTEND:20260828T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-77-20260828T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260828T183000
-DTEND:20260828T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-78-20260828T073000@eightweekkitchen
+UID:8wk-15-20260828T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260828T073000
 DTEND:20260828T081500
@@ -1070,78 +247,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-79-20260828T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260828T103000
-DTEND:20260828T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-80-20260828T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260828T153000
-DTEND:20260828T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-81-20260829T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260829T070000
-DTEND:20260829T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-82-20260829T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260829T123000
-DTEND:20260829T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-83-20260829T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260829T183000
-DTEND:20260829T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-84-20260829T073000@eightweekkitchen
+UID:8wk-16-20260829T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260829T073000
 DTEND:20260829T081500
 SUMMARY:Week 2 · Walk 30 min
-DESCRIPTION:Easy. This is the longest session of the week and it should st
- ill feel easy.
+DESCRIPTION:Easy. Longest of the week and it should still feel easy.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 2 · Walk 30 min
@@ -1149,102 +260,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-85-20260829T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260829T103000
-DTEND:20260829T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-86-20260829T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260829T153000
-DTEND:20260829T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-87-20260830T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260830T070000
-DTEND:20260830T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-88-20260830T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260830T123000
-DTEND:20260830T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-89-20260830T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260830T183000
-DTEND:20260830T191000
-SUMMARY:Dinner · Pork tenderloin sheet pan
-DESCRIPTION:480 kcal\, 44g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Pork tenderloin sheet pan
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-90-20260830T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260830T093000
-DTEND:20260830T101500
-SUMMARY:Shop · block 2 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 2 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-91-20260830T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260830T100000
-DTEND:20260830T115000
-SUMMARY:Meal prep · Rotation
-DESCRIPTION:2 lb chicken thighs — half harissa\, half Greek\n1 pork tender
- loin\, roasted Sunday (see recipe)\nVegetable tray: broccoli\, peppers\, 
- red onion\, carrots\n2 cups rice or couscous\nWhite chicken chili — 5 ser
- vings\, freeze 2\n8 hard-boiled eggs\nGarlic-lemon yogurt + ginger-scalli
- on soy\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Rotation
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-92-20260830T070000@eightweekkitchen
+UID:8wk-17-20260830T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260830T070000
 DTEND:20260830T070500
@@ -1257,88 +273,51 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-93-20260830T103000@eightweekkitchen
+UID:8wk-18-20260830T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260830T103000
-DTEND:20260830T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260830T093000
+DTEND:20260830T101500
+SUMMARY:Shop · block 2 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 2 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-94-20260830T153000@eightweekkitchen
+UID:8wk-19-20260830T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260830T153000
-DTEND:20260830T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260830T100000
+DTEND:20260830T115000
+SUMMARY:Meal prep · Settle + first challenge
+DESCRIPTION:Garlic-infused oil\, fresh batch\n2 lb chicken thighs — half G
+ reek\, half cumin-lime\n1 pork tenderloin\, roasted Sunday\nVegetable tra
+ y: zucchini\, peppers\, carrots\, green beans\n2 cups rice\nChicken & ric
+ e soup — 5 servings\, freeze 2\n8 hard-boiled eggs\nBoth sauces + fresh s
+ alsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-95-20260831T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260831T070000
-DTEND:20260831T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-96-20260831T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260831T123000
-DTEND:20260831T130500
-SUMMARY:Lunch · Harissa chicken bowl
-DESCRIPTION:530 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Harissa chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-97-20260831T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260831T183000
-DTEND:20260831T191000
-SUMMARY:Dinner · Ginger shrimp & edamame stir-fry
-DESCRIPTION:500 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Ginger shrimp & edamame stir-fry
+DESCRIPTION:Meal prep · Settle + first challenge
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-98-20260831T171500@eightweekkitchen
+UID:8wk-20-20260831T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260831T171500
 DTEND:20260831T175500
 SUMMARY:Week 3 · Strength A
-DESCRIPTION:3 sets × 10 reps · rest 90s\n\n• Goblet squat — One dumbbell h
- eld at your chest. Sit down between your knees\, chest tall. Heels stay d
- own.\n• Dumbbell floor press — On your back on the floor\, knees bent. El
- bows stop when they touch the ground — that is the depth.\n• Romanian dea
- dlift — Dumbbells in front of your thighs. Push your hips BACK\, not down
- . Stop when you feel the hamstrings\, not when you reach the floor.\n• Sh
- oulder press — Seated or standing. Ribs down\, do not arch your lower bac
- k to get the weight up.\n• Plank — Squeeze your glutes. Hips level with s
- houlders. Stop the set when the hips start to sag\, not when the clock sa
- ys so.\n\n3 sets of 10. Go to 20 lb on squats\, rows and RDLs. Keep press
- es lighter if 20 feels heavy — shoulders lag behind legs and that is norm
- al.
+DESCRIPTION:3 sets × 10 · rest 90s\n\n• Goblet squat — One dumbbell at you
+ r chest. Sit down between your knees\, chest tall\, heels down.\n• Dumbbe
+ ll floor press — On your back\, knees bent. Elbows stop when they touch t
+ he floor — that is the depth.\n• Romanian deadlift — Push your hips BACK\
+ , not down. Stop when you feel the hamstrings\, not when you reach the fl
+ oor.\n• Shoulder press — Ribs down. Do not arch your lower back to get th
+ e weight up.\n• Plank — Squeeze your glutes\, hips level with shoulders. 
+ The set ends when the hips sag\, not when the clock says.\n\n3 sets of 10
+ . Go to 20 lb on squats\, rows and RDLs. Keep presses lighter if 20 feels
+  heavy — shoulders lag behind legs and that is normal.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 3 · Strength A
@@ -1346,78 +325,13 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-99-20260831T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260831T103000
-DTEND:20260831T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-100-20260831T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260831T153000
-DTEND:20260831T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-101-20260901T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260901T070000
-DTEND:20260901T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-102-20260901T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260901T123000
-DTEND:20260901T130500
-SUMMARY:Lunch · Pork & apple rice bowl
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Pork & apple rice bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-103-20260901T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260901T183000
-DTEND:20260901T191000
-SUMMARY:Dinner · White chicken chili
-DESCRIPTION:440 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · White chicken chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-104-20260901T073000@eightweekkitchen
+UID:8wk-21-20260901T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260901T073000
 DTEND:20260901T081500
 SUMMARY:Week 3 · Walk 30 min
-DESCRIPTION:3.2 mph\, 2% incline. The incline is doing the work\, not the 
- speed.
+DESCRIPTION:3.2 mph\, 2% incline. The incline does the work\, not the spee
+ d.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 3 · Walk 30 min
@@ -1425,153 +339,22 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-105-20260901T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260901T103000
-DTEND:20260901T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-106-20260901T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260901T153000
-DTEND:20260901T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-107-20260902T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260902T070000
-DTEND:20260902T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-108-20260902T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260902T123000
-DTEND:20260902T130500
-SUMMARY:Lunch · White chicken chili
-DESCRIPTION:440 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · White chicken chili
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-109-20260902T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260902T183000
-DTEND:20260902T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-110-20260902T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260902T103000
-DTEND:20260902T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-111-20260902T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260902T153000
-DTEND:20260902T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-112-20260903T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260903T070000
-DTEND:20260903T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-113-20260903T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260903T123000
-DTEND:20260903T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-114-20260903T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260903T183000
-DTEND:20260903T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-115-20260903T171500@eightweekkitchen
+UID:8wk-22-20260903T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260903T171500
 DTEND:20260903T175500
 SUMMARY:Week 3 · Strength B
-DESCRIPTION:3 sets × 10 reps · rest 90s\n\n• Bent-over row — Hinge to abou
- t 45°\, back flat. Pull the dumbbells to your hips\, not your chest. Paus
- e for a beat at the top.\n• Split squat — One foot forward\, one back\, l
- ong stance. Drop straight down. Do all reps one side\, then the other.\n•
-  Glute bridge — Dumbbell across your hips. Drive through your heels\, squ
- eeze hard at the top for a full second.\n• Curl + overhead extension — Cu
- rl up\, then press overhead and lower behind your head. One continuous mo
- vement\, no rest between.\n• Dead bug — On your back\, arms up\, knees at
-  90°. Lower opposite arm and leg slowly. Lower back stays glued to the fl
- oor.\n\n3 sets of 10. Go to 20 lb on squats\, rows and RDLs. Keep presses
-  lighter if 20 feels heavy — shoulders lag behind legs and that is normal
- .
+DESCRIPTION:3 sets × 10 · rest 90s\n\n• Bent-over row — Hinge to about 45°
+ \, back flat. Pull to your hips\, not your chest. Pause a beat at the top
+ .\n• Split squat — One foot forward\, one back\, long stance. Straight do
+ wn. All reps one side\, then the other.\n• Glute bridge — Dumbbell across
+  the hips. Drive through your heels\, squeeze hard for a full second at t
+ he top.\n• Curl + overhead extension — Curl up\, press overhead\, lower b
+ ehind your head. One continuous movement.\n• Dead bug — On your back\, ar
+ ms up\, knees at 90°. Lower opposite arm and leg slowly. Lower back stays
+  glued down.\n\n3 sets of 10. Go to 20 lb on squats\, rows and RDLs. Keep
+  presses lighter if 20 feels heavy — shoulders lag behind legs and that i
+ s normal.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 3 · Strength B
@@ -1579,72 +362,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-116-20260903T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260903T103000
-DTEND:20260903T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-117-20260903T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260903T153000
-DTEND:20260903T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-118-20260904T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260904T070000
-DTEND:20260904T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-119-20260904T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260904T123000
-DTEND:20260904T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-120-20260904T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260904T183000
-DTEND:20260904T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-121-20260904T073000@eightweekkitchen
+UID:8wk-23-20260904T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260904T073000
 DTEND:20260904T081500
@@ -1657,77 +375,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-122-20260904T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260904T103000
-DTEND:20260904T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-123-20260904T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260904T153000
-DTEND:20260904T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-124-20260905T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260905T070000
-DTEND:20260905T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-125-20260905T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260905T123000
-DTEND:20260905T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-126-20260905T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260905T183000
-DTEND:20260905T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-127-20260905T073000@eightweekkitchen
+UID:8wk-24-20260905T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260905T073000
 DTEND:20260905T081500
 SUMMARY:Week 3 · Walk 30 min
-DESCRIPTION:Easy\, outside if you can.
+DESCRIPTION:Easy\, outside.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 3 · Walk 30 min
@@ -1735,102 +388,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-128-20260905T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260905T103000
-DTEND:20260905T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-129-20260905T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260905T153000
-DTEND:20260905T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-130-20260906T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260906T070000
-DTEND:20260906T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-131-20260906T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260906T123000
-DTEND:20260906T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-132-20260906T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260906T183000
-DTEND:20260906T191000
-SUMMARY:Dinner · Pork tenderloin sheet pan
-DESCRIPTION:480 kcal\, 44g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Pork tenderloin sheet pan
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-133-20260906T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260906T093000
-DTEND:20260906T101500
-SUMMARY:Shop · block 2 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 2 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-134-20260906T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260906T100000
-DTEND:20260906T115000
-SUMMARY:Meal prep · Rotation
-DESCRIPTION:2 lb chicken thighs — half harissa\, half Greek\n1 pork tender
- loin\, roasted Sunday (see recipe)\nVegetable tray: broccoli\, peppers\, 
- red onion\, carrots\n2 cups rice or couscous\nWhite chicken chili — 5 ser
- vings\, freeze 2\n8 hard-boiled eggs\nGarlic-lemon yogurt + ginger-scalli
- on soy\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Rotation
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-135-20260906T070000@eightweekkitchen
+UID:8wk-25-20260906T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260906T070000
 DTEND:20260906T070500
@@ -1843,86 +401,50 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-136-20260906T103000@eightweekkitchen
+UID:8wk-26-20260906T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260906T103000
-DTEND:20260906T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260906T093000
+DTEND:20260906T101500
+SUMMARY:Shop · block 2 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 2 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-137-20260906T153000@eightweekkitchen
+UID:8wk-27-20260906T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260906T153000
-DTEND:20260906T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260906T100000
+DTEND:20260906T115000
+SUMMARY:Meal prep · Settle + first challenge
+DESCRIPTION:Garlic-infused oil\, fresh batch\n2 lb chicken thighs — half G
+ reek\, half cumin-lime\n1 pork tenderloin\, roasted Sunday\nVegetable tra
+ y: zucchini\, peppers\, carrots\, green beans\n2 cups rice\nChicken & ric
+ e soup — 5 servings\, freeze 2\n8 hard-boiled eggs\nBoth sauces + fresh s
+ alsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-138-20260907T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260907T070000
-DTEND:20260907T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-139-20260907T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260907T123000
-DTEND:20260907T130500
-SUMMARY:Lunch · Harissa chicken bowl
-DESCRIPTION:530 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Harissa chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-140-20260907T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260907T183000
-DTEND:20260907T191000
-SUMMARY:Dinner · Ginger shrimp & edamame stir-fry
-DESCRIPTION:500 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Ginger shrimp & edamame stir-fry
+DESCRIPTION:Meal prep · Settle + first challenge
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-141-20260907T171500@eightweekkitchen
+UID:8wk-28-20260907T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260907T171500
 DTEND:20260907T175500
 SUMMARY:Week 4 · Strength A
-DESCRIPTION:3 sets × 12 reps · rest 90s\n\n• Goblet squat — One dumbbell h
- eld at your chest. Sit down between your knees\, chest tall. Heels stay d
- own.\n• Dumbbell floor press — On your back on the floor\, knees bent. El
- bows stop when they touch the ground — that is the depth.\n• Romanian dea
- dlift — Dumbbells in front of your thighs. Push your hips BACK\, not down
- . Stop when you feel the hamstrings\, not when you reach the floor.\n• Sh
- oulder press — Seated or standing. Ribs down\, do not arch your lower bac
- k to get the weight up.\n• Plank — Squeeze your glutes. Hips level with s
- houlders. Stop the set when the hips start to sag\, not when the clock sa
- ys so.\n\n3 sets of 12. 20 lb wherever you can hold form.
+DESCRIPTION:3 sets × 12 · rest 90s\n\n• Goblet squat — One dumbbell at you
+ r chest. Sit down between your knees\, chest tall\, heels down.\n• Dumbbe
+ ll floor press — On your back\, knees bent. Elbows stop when they touch t
+ he floor — that is the depth.\n• Romanian deadlift — Push your hips BACK\
+ , not down. Stop when you feel the hamstrings\, not when you reach the fl
+ oor.\n• Shoulder press — Ribs down. Do not arch your lower back to get th
+ e weight up.\n• Plank — Squeeze your glutes\, hips level with shoulders. 
+ The set ends when the hips sag\, not when the clock says.\n\n3 sets of 12
+ \, 20 lb wherever you can hold form.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 4 · Strength A
@@ -1930,72 +452,21 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-142-20260907T103000@eightweekkitchen
+UID:8wk-29-20260907T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260907T103000
-DTEND:20260907T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260907T070000
+DTEND:20260907T072000
+SUMMARY:Challenge 1/3 · Lactose
+DESCRIPTION:Mon — ½ cup regular milk with breakfast\n\nEverything else sta
+ ys the same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-143-20260907T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260907T153000
-DTEND:20260907T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-144-20260908T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260908T070000
-DTEND:20260908T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-145-20260908T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260908T123000
-DTEND:20260908T130500
-SUMMARY:Lunch · Pork & apple rice bowl
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Pork & apple rice bowl
+DESCRIPTION:Challenge 1/3 · Lactose
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-146-20260908T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260908T183000
-DTEND:20260908T191000
-SUMMARY:Dinner · White chicken chili
-DESCRIPTION:440 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · White chicken chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-147-20260908T073000@eightweekkitchen
+UID:8wk-30-20260908T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260908T073000
 DTEND:20260908T081500
@@ -2008,151 +479,48 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-148-20260908T103000@eightweekkitchen
+UID:8wk-31-20260908T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260908T103000
-DTEND:20260908T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260908T070000
+DTEND:20260908T072000
+SUMMARY:Challenge 2/3 · Lactose
+DESCRIPTION:Tue — 1 cup regular milk\n\nEverything else stays the same as 
+ last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Challenge 2/3 · Lactose
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-149-20260908T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260908T153000
-DTEND:20260908T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-150-20260909T070000@eightweekkitchen
+UID:8wk-32-20260909T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260909T070000
-DTEND:20260909T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
+DTEND:20260909T072000
+SUMMARY:Challenge 3/3 · Lactose
+DESCRIPTION:Wed — 1 cup milk + ¾ cup regular yogurt\n\nEverything else sta
+ ys the same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-151-20260909T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260909T123000
-DTEND:20260909T130500
-SUMMARY:Lunch · White chicken chili
-DESCRIPTION:440 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · White chicken chili
+DESCRIPTION:Challenge 3/3 · Lactose
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-152-20260909T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260909T183000
-DTEND:20260909T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-153-20260909T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260909T103000
-DTEND:20260909T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-154-20260909T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260909T153000
-DTEND:20260909T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-155-20260910T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260910T070000
-DTEND:20260910T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-156-20260910T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260910T123000
-DTEND:20260910T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-157-20260910T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260910T183000
-DTEND:20260910T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-158-20260910T171500@eightweekkitchen
+UID:8wk-33-20260910T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260910T171500
 DTEND:20260910T175500
 SUMMARY:Week 4 · Strength B
-DESCRIPTION:3 sets × 12 reps · rest 90s\n\n• Bent-over row — Hinge to abou
- t 45°\, back flat. Pull the dumbbells to your hips\, not your chest. Paus
- e for a beat at the top.\n• Split squat — One foot forward\, one back\, l
- ong stance. Drop straight down. Do all reps one side\, then the other.\n•
-  Glute bridge — Dumbbell across your hips. Drive through your heels\, squ
- eeze hard at the top for a full second.\n• Curl + overhead extension — Cu
- rl up\, then press overhead and lower behind your head. One continuous mo
- vement\, no rest between.\n• Dead bug — On your back\, arms up\, knees at
-  90°. Lower opposite arm and leg slowly. Lower back stays glued to the fl
- oor.\n\n3 sets of 12. 20 lb wherever you can hold form.
+DESCRIPTION:3 sets × 12 · rest 90s\n\n• Bent-over row — Hinge to about 45°
+ \, back flat. Pull to your hips\, not your chest. Pause a beat at the top
+ .\n• Split squat — One foot forward\, one back\, long stance. Straight do
+ wn. All reps one side\, then the other.\n• Glute bridge — Dumbbell across
+  the hips. Drive through your heels\, squeeze hard for a full second at t
+ he top.\n• Curl + overhead extension — Curl up\, press overhead\, lower b
+ ehind your head. One continuous movement.\n• Dead bug — On your back\, ar
+ ms up\, knees at 90°. Lower opposite arm and leg slowly. Lower back stays
+  glued down.\n\n3 sets of 12\, 20 lb wherever you can hold form.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 4 · Strength B
@@ -2160,86 +528,20 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-159-20260910T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260910T103000
-DTEND:20260910T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-160-20260910T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260910T153000
-DTEND:20260910T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-161-20260911T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260911T070000
-DTEND:20260911T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-162-20260911T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260911T123000
-DTEND:20260911T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-163-20260911T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260911T183000
-DTEND:20260911T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-164-20260911T171500@eightweekkitchen
+UID:8wk-34-20260911T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260911T171500
 DTEND:20260911T175500
 SUMMARY:Week 4 · Strength A
-DESCRIPTION:3 sets × 10 reps · lighter\, move quickly\n\n• Goblet squat — 
- One dumbbell held at your chest. Sit down between your knees\, chest tall
- . Heels stay down.\n• Dumbbell floor press — On your back on the floor\, 
- knees bent. Elbows stop when they touch the ground — that is the depth.\n
- • Romanian deadlift — Dumbbells in front of your thighs. Push your hips B
- ACK\, not down. Stop when you feel the hamstrings\, not when you reach th
- e floor.\n• Shoulder press — Seated or standing. Ribs down\, do not arch 
- your lower back to get the weight up.\n• Plank — Squeeze your glutes. Hip
- s level with shoulders. Stop the set when the hips start to sag\, not whe
- n the clock says so.\n\n3 sets of 12. 20 lb wherever you can hold form.
+DESCRIPTION:3 sets × 10\, lighter\, move quickly\n\n• Goblet squat — One d
+ umbbell at your chest. Sit down between your knees\, chest tall\, heels d
+ own.\n• Dumbbell floor press — On your back\, knees bent. Elbows stop whe
+ n they touch the floor — that is the depth.\n• Romanian deadlift — Push y
+ our hips BACK\, not down. Stop when you feel the hamstrings\, not when yo
+ u reach the floor.\n• Shoulder press — Ribs down. Do not arch your lower 
+ back to get the weight up.\n• Plank — Squeeze your glutes\, hips level wi
+ th shoulders. The set ends when the hips sag\, not when the clock says.\n
+ \n3 sets of 12\, 20 lb wherever you can hold form.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 4 · Strength A
@@ -2247,78 +549,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-165-20260911T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260911T103000
-DTEND:20260911T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-166-20260911T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260911T153000
-DTEND:20260911T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-167-20260912T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260912T070000
-DTEND:20260912T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-168-20260912T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260912T123000
-DTEND:20260912T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-169-20260912T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260912T183000
-DTEND:20260912T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-170-20260912T073000@eightweekkitchen
+UID:8wk-35-20260912T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260912T073000
 DTEND:20260912T081500
 SUMMARY:Week 4 · Walk 35 min
-DESCRIPTION:3.5 mph\, 1% incline. Halfway. Take a photo and weigh yourself
- .
+DESCRIPTION:3.5 mph\, 1%. Halfway — weigh in and take a photo.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 4 · Walk 35 min
@@ -2326,101 +562,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-171-20260912T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260912T103000
-DTEND:20260912T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-172-20260912T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260912T153000
-DTEND:20260912T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-173-20260913T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260913T070000
-DTEND:20260913T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-174-20260913T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260913T123000
-DTEND:20260913T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-175-20260913T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260913T183000
-DTEND:20260913T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-176-20260913T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260913T093000
-DTEND:20260913T101500
-SUMMARY:Shop · block 3 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 3 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-177-20260913T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260913T100000
-DTEND:20260913T115000
-SUMMARY:Meal prep · Build
-DESCRIPTION:2½ lb chicken thighs — half jerk\, half Greek\nVegetable tray:
-  broccoli\, peppers\, red onion\, zucchini\n2 cups rice\nLentil & sausage
-  soup — 5 servings\, freeze 2\n8 hard-boiled eggs\nShakshuka base (double
-  batch\, keeps 5 days)\nBoth sauces\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Build
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-178-20260913T070000@eightweekkitchen
+UID:8wk-36-20260913T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260913T070000
 DTEND:20260913T070500
@@ -2433,88 +575,51 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-179-20260913T103000@eightweekkitchen
+UID:8wk-37-20260913T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260913T103000
-DTEND:20260913T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260913T093000
+DTEND:20260913T101500
+SUMMARY:Shop · block 3 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 3 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-180-20260913T153000@eightweekkitchen
+UID:8wk-38-20260913T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260913T153000
-DTEND:20260913T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260913T100000
+DTEND:20260913T115000
+SUMMARY:Meal prep · Garlic\, onion\, then beans
+DESCRIPTION:Garlic-infused oil (still your baseline fat outside the challe
+ nge days)\n2½ lb chicken thighs — half Greek\, half cumin-lime\nVegetable
+  tray\n2 cups rice\nTurkey chili\, no beans — 5 servings\nWEEK 6 ONLY: le
+ ntil soup for the challenge days\n8 hard-boiled eggs\nBoth sauces + fresh
+  salsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-181-20260914T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260914T070000
-DTEND:20260914T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-182-20260914T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260914T123000
-DTEND:20260914T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-183-20260914T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260914T183000
-DTEND:20260914T191000
-SUMMARY:Dinner · Soy-ginger beef bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Soy-ginger beef bowl
+DESCRIPTION:Meal prep · Garlic\, onion\, then beans
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-184-20260914T171500@eightweekkitchen
+UID:8wk-39-20260914T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260914T171500
 DTEND:20260914T175500
 SUMMARY:Week 5 · Strength A
-DESCRIPTION:3 × 12\, 3-second lowering · rest 90s\n\n• Goblet squat — One 
- dumbbell held at your chest. Sit down between your knees\, chest tall. He
- els stay down.\n• Dumbbell floor press — On your back on the floor\, knee
- s bent. Elbows stop when they touch the ground — that is the depth.\n• Ro
- manian deadlift — Dumbbells in front of your thighs. Push your hips BACK\
- , not down. Stop when you feel the hamstrings\, not when you reach the fl
- oor.\n• Shoulder press — Seated or standing. Ribs down\, do not arch your
-  lower back to get the weight up.\n• Plank — Squeeze your glutes. Hips le
- vel with shoulders. Stop the set when the hips start to sag\, not when th
- e clock says so.\n\n3 sets of 12\, and start counting three seconds on th
- e way DOWN of every rep. With 20 lb dumbbells\, tempo is how you keep pro
- gressing.
+DESCRIPTION:3 × 12\, 3-second lowering\n\n• Goblet squat — One dumbbell at
+  your chest. Sit down between your knees\, chest tall\, heels down.\n• Du
+ mbbell floor press — On your back\, knees bent. Elbows stop when they tou
+ ch the floor — that is the depth.\n• Romanian deadlift — Push your hips B
+ ACK\, not down. Stop when you feel the hamstrings\, not when you reach th
+ e floor.\n• Shoulder press — Ribs down. Do not arch your lower back to ge
+ t the weight up.\n• Plank — Squeeze your glutes\, hips level with shoulde
+ rs. The set ends when the hips sag\, not when the clock says.\n\n3 sets o
+ f 12\, and count three seconds on the way DOWN of every rep. With 20 lb d
+ umbbells\, tempo is how you keep progressing.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 5 · Strength A
@@ -2522,78 +627,27 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-185-20260914T103000@eightweekkitchen
+UID:8wk-40-20260914T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260914T103000
-DTEND:20260914T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260914T070000
+DTEND:20260914T072000
+SUMMARY:Challenge 1/3 · Fructans — garlic & onion
+DESCRIPTION:Mon — ½ clove real garlic in a meal\n\nEverything else stays t
+ he same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-186-20260914T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260914T153000
-DTEND:20260914T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-187-20260915T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260915T070000
-DTEND:20260915T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-188-20260915T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260915T123000
-DTEND:20260915T130500
-SUMMARY:Lunch · Jerk chicken bowl
-DESCRIPTION:540 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Jerk chicken bowl
+DESCRIPTION:Challenge 1/3 · Fructans — garlic & onion
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-189-20260915T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260915T183000
-DTEND:20260915T191000
-SUMMARY:Dinner · Lentil & sausage soup
-DESCRIPTION:430 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Lentil & sausage soup
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-190-20260915T073000@eightweekkitchen
+UID:8wk-41-20260915T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260915T073000
 DTEND:20260915T081500
 SUMMARY:Week 5 · Intervals ×5
-DESCRIPTION:5 min warm-up at 3.0. Then 5 rounds of: 3 min at 3.5 mph / 1 m
- in at 5.0 mph. 5 min cool-down. 30 min total.
+DESCRIPTION:5 min warm-up at 3.0. Then 5 rounds of 3 min at 3.5 / 1 min at
+  5.0. 5 min cool-down. 30 min.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 5 · Intervals ×5
@@ -2601,153 +655,49 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-191-20260915T103000@eightweekkitchen
+UID:8wk-42-20260915T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260915T103000
-DTEND:20260915T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260915T070000
+DTEND:20260915T072000
+SUMMARY:Challenge 2/3 · Fructans — garlic & onion
+DESCRIPTION:Tue — 1 clove garlic + ¼ cup diced onion\n\nEverything else st
+ ays the same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Challenge 2/3 · Fructans — garlic & onion
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-192-20260915T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260915T153000
-DTEND:20260915T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-193-20260916T070000@eightweekkitchen
+UID:8wk-43-20260916T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260916T070000
-DTEND:20260916T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
+DTEND:20260916T072000
+SUMMARY:Challenge 3/3 · Fructans — garlic & onion
+DESCRIPTION:Wed — 2 cloves + ½ cup onion\n\nEverything else stays the same
+  as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-194-20260916T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260916T123000
-DTEND:20260916T130500
-SUMMARY:Lunch · Lentil & sausage soup
-DESCRIPTION:430 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Lentil & sausage soup
+DESCRIPTION:Challenge 3/3 · Fructans — garlic & onion
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-195-20260916T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260916T183000
-DTEND:20260916T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-196-20260916T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260916T103000
-DTEND:20260916T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-197-20260916T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260916T153000
-DTEND:20260916T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-198-20260917T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260917T070000
-DTEND:20260917T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-199-20260917T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260917T123000
-DTEND:20260917T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-200-20260917T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260917T183000
-DTEND:20260917T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-201-20260917T171500@eightweekkitchen
+UID:8wk-44-20260917T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260917T171500
 DTEND:20260917T175500
 SUMMARY:Week 5 · Strength B
-DESCRIPTION:3 × 12\, 3-second lowering · rest 90s\n\n• Bent-over row — Hin
- ge to about 45°\, back flat. Pull the dumbbells to your hips\, not your c
- hest. Pause for a beat at the top.\n• Split squat — One foot forward\, on
- e back\, long stance. Drop straight down. Do all reps one side\, then the
-  other.\n• Glute bridge — Dumbbell across your hips. Drive through your h
- eels\, squeeze hard at the top for a full second.\n• Curl + overhead exte
- nsion — Curl up\, then press overhead and lower behind your head. One con
- tinuous movement\, no rest between.\n• Dead bug — On your back\, arms up\
- , knees at 90°. Lower opposite arm and leg slowly. Lower back stays glued
-  to the floor.\n\n3 sets of 12\, and start counting three seconds on the 
- way DOWN of every rep. With 20 lb dumbbells\, tempo is how you keep progr
- essing.
+DESCRIPTION:3 × 12\, 3-second lowering\n\n• Bent-over row — Hinge to about
+  45°\, back flat. Pull to your hips\, not your chest. Pause a beat at the
+  top.\n• Split squat — One foot forward\, one back\, long stance. Straigh
+ t down. All reps one side\, then the other.\n• Glute bridge — Dumbbell ac
+ ross the hips. Drive through your heels\, squeeze hard for a full second 
+ at the top.\n• Curl + overhead extension — Curl up\, press overhead\, low
+ er behind your head. One continuous movement.\n• Dead bug — On your back\
+ , arms up\, knees at 90°. Lower opposite arm and leg slowly. Lower back s
+ tays glued down.\n\n3 sets of 12\, and count three seconds on the way DOW
+ N of every rep. With 20 lb dumbbells\, tempo is how you keep progressing.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 5 · Strength B
@@ -2755,77 +705,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-202-20260917T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260917T103000
-DTEND:20260917T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-203-20260917T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260917T153000
-DTEND:20260917T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-204-20260918T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260918T070000
-DTEND:20260918T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-205-20260918T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260918T123000
-DTEND:20260918T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-206-20260918T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260918T183000
-DTEND:20260918T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-207-20260918T073000@eightweekkitchen
+UID:8wk-45-20260918T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260918T073000
 DTEND:20260918T081500
 SUMMARY:Week 5 · Walk 30 min
-DESCRIPTION:3.5 mph\, 3% incline. Steady\, no intervals.
+DESCRIPTION:3.5 mph\, 3% incline. Steady.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 5 · Walk 30 min
@@ -2833,72 +718,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-208-20260918T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260918T103000
-DTEND:20260918T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-209-20260918T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260918T153000
-DTEND:20260918T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-210-20260919T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260919T070000
-DTEND:20260919T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-211-20260919T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260919T123000
-DTEND:20260919T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-212-20260919T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260919T183000
-DTEND:20260919T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-213-20260919T073000@eightweekkitchen
+UID:8wk-46-20260919T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260919T073000
 DTEND:20260919T081500
@@ -2911,101 +731,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-214-20260919T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260919T103000
-DTEND:20260919T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-215-20260919T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260919T153000
-DTEND:20260919T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-216-20260920T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260920T070000
-DTEND:20260920T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-217-20260920T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260920T123000
-DTEND:20260920T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-218-20260920T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260920T183000
-DTEND:20260920T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-219-20260920T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260920T093000
-DTEND:20260920T101500
-SUMMARY:Shop · block 3 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 3 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-220-20260920T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260920T100000
-DTEND:20260920T115000
-SUMMARY:Meal prep · Build
-DESCRIPTION:2½ lb chicken thighs — half jerk\, half Greek\nVegetable tray:
-  broccoli\, peppers\, red onion\, zucchini\n2 cups rice\nLentil & sausage
-  soup — 5 servings\, freeze 2\n8 hard-boiled eggs\nShakshuka base (double
-  batch\, keeps 5 days)\nBoth sauces\n3 jars overnight oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Build
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-221-20260920T070000@eightweekkitchen
+UID:8wk-47-20260920T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260920T070000
 DTEND:20260920T070500
@@ -3018,87 +744,51 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-222-20260920T103000@eightweekkitchen
+UID:8wk-48-20260920T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260920T103000
-DTEND:20260920T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260920T093000
+DTEND:20260920T101500
+SUMMARY:Shop · block 3 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 3 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-223-20260920T153000@eightweekkitchen
+UID:8wk-49-20260920T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260920T153000
-DTEND:20260920T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260920T100000
+DTEND:20260920T115000
+SUMMARY:Meal prep · Garlic\, onion\, then beans
+DESCRIPTION:Garlic-infused oil (still your baseline fat outside the challe
+ nge days)\n2½ lb chicken thighs — half Greek\, half cumin-lime\nVegetable
+  tray\n2 cups rice\nTurkey chili\, no beans — 5 servings\nWEEK 6 ONLY: le
+ ntil soup for the challenge days\n8 hard-boiled eggs\nBoth sauces + fresh
+  salsa\n3 jars overnight oats
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-224-20260921T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260921T070000
-DTEND:20260921T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-225-20260921T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260921T123000
-DTEND:20260921T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-226-20260921T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260921T183000
-DTEND:20260921T191000
-SUMMARY:Dinner · Soy-ginger beef bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Soy-ginger beef bowl
+DESCRIPTION:Meal prep · Garlic\, onion\, then beans
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-227-20260921T171500@eightweekkitchen
+UID:8wk-50-20260921T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260921T171500
 DTEND:20260921T175500
 SUMMARY:Week 6 · Strength A
-DESCRIPTION:3 × 12 tempo\, last set to near-failure\n\n• Goblet squat — On
- e dumbbell held at your chest. Sit down between your knees\, chest tall. 
- Heels stay down.\n• Dumbbell floor press — On your back on the floor\, kn
- ees bent. Elbows stop when they touch the ground — that is the depth.\n• 
- Romanian deadlift — Dumbbells in front of your thighs. Push your hips BAC
- K\, not down. Stop when you feel the hamstrings\, not when you reach the 
- floor.\n• Shoulder press — Seated or standing. Ribs down\, do not arch yo
- ur lower back to get the weight up.\n• Plank — Squeeze your glutes. Hips 
- level with shoulders. Stop the set when the hips start to sag\, not when 
- the clock says so.\n\n3 sets of 12 with the 3-second lowering. Last set o
- f each exercise: go until two reps before failure\, however many that is.
+DESCRIPTION:3 × 12 tempo\, last set near-failure\n\n• Goblet squat — One d
+ umbbell at your chest. Sit down between your knees\, chest tall\, heels d
+ own.\n• Dumbbell floor press — On your back\, knees bent. Elbows stop whe
+ n they touch the floor — that is the depth.\n• Romanian deadlift — Push y
+ our hips BACK\, not down. Stop when you feel the hamstrings\, not when yo
+ u reach the floor.\n• Shoulder press — Ribs down. Do not arch your lower 
+ back to get the weight up.\n• Plank — Squeeze your glutes\, hips level wi
+ th shoulders. The set ends when the hips sag\, not when the clock says.\n
+ \n3 sets of 12 with the 3-second lowering. Last set of each: go to two re
+ ps before failure\, whatever that number is.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 6 · Strength A
@@ -3106,78 +796,27 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-228-20260921T103000@eightweekkitchen
+UID:8wk-51-20260921T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260921T103000
-DTEND:20260921T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260921T070000
+DTEND:20260921T072000
+SUMMARY:Challenge 1/3 · GOS — beans & lentils
+DESCRIPTION:Mon — ¼ cup canned chickpeas\, rinsed\n\nEverything else stays
+  the same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-229-20260921T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260921T153000
-DTEND:20260921T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-230-20260922T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260922T070000
-DTEND:20260922T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-231-20260922T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260922T123000
-DTEND:20260922T130500
-SUMMARY:Lunch · Jerk chicken bowl
-DESCRIPTION:540 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Jerk chicken bowl
+DESCRIPTION:Challenge 1/3 · GOS — beans & lentils
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-232-20260922T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260922T183000
-DTEND:20260922T191000
-SUMMARY:Dinner · Lentil & sausage soup
-DESCRIPTION:430 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Lentil & sausage soup
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-233-20260922T073000@eightweekkitchen
+UID:8wk-52-20260922T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260922T073000
 DTEND:20260922T081500
 SUMMARY:Week 6 · Intervals ×6
-DESCRIPTION:5 min warm-up. 6 rounds of: 3 min at 3.5 / 1 min at 5.0. Cool-
- down. 34 min total.
+DESCRIPTION:5 min warm-up. 6 rounds of 3 min at 3.5 / 1 min at 5.0. Cool-d
+ own. 34 min.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 6 · Intervals ×6
@@ -3185,152 +824,49 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-234-20260922T103000@eightweekkitchen
+UID:8wk-53-20260922T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260922T103000
-DTEND:20260922T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260922T070000
+DTEND:20260922T072000
+SUMMARY:Challenge 2/3 · GOS — beans & lentils
+DESCRIPTION:Tue — ½ cup chickpeas\n\nEverything else stays the same as las
+ t week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Challenge 2/3 · GOS — beans & lentils
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-235-20260922T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260922T153000
-DTEND:20260922T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-236-20260923T070000@eightweekkitchen
+UID:8wk-54-20260923T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260923T070000
-DTEND:20260923T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
+DTEND:20260923T072000
+SUMMARY:Challenge 3/3 · GOS — beans & lentils
+DESCRIPTION:Wed — ¾ cup chickpeas\, or the lentil soup\n\nEverything else 
+ stays the same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-237-20260923T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260923T123000
-DTEND:20260923T130500
-SUMMARY:Lunch · Lentil & sausage soup
-DESCRIPTION:430 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Lentil & sausage soup
+DESCRIPTION:Challenge 3/3 · GOS — beans & lentils
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-238-20260923T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260923T183000
-DTEND:20260923T191000
-SUMMARY:Dinner · Miso-glazed salmon & broccoli
-DESCRIPTION:510 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Miso-glazed salmon & broccoli
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-239-20260923T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260923T103000
-DTEND:20260923T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-240-20260923T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260923T153000
-DTEND:20260923T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-241-20260924T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260924T070000
-DTEND:20260924T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-242-20260924T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260924T123000
-DTEND:20260924T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-243-20260924T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260924T183000
-DTEND:20260924T191000
-SUMMARY:Dinner · Street tacos
-DESCRIPTION:520 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Street tacos
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-244-20260924T171500@eightweekkitchen
+UID:8wk-55-20260924T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260924T171500
 DTEND:20260924T175500
 SUMMARY:Week 6 · Strength B
-DESCRIPTION:3 × 12 tempo\, last set to near-failure\n\n• Bent-over row — H
- inge to about 45°\, back flat. Pull the dumbbells to your hips\, not your
-  chest. Pause for a beat at the top.\n• Split squat — One foot forward\, 
- one back\, long stance. Drop straight down. Do all reps one side\, then t
- he other.\n• Glute bridge — Dumbbell across your hips. Drive through your
-  heels\, squeeze hard at the top for a full second.\n• Curl + overhead ex
- tension — Curl up\, then press overhead and lower behind your head. One c
- ontinuous movement\, no rest between.\n• Dead bug — On your back\, arms u
- p\, knees at 90°. Lower opposite arm and leg slowly. Lower back stays glu
- ed to the floor.\n\n3 sets of 12 with the 3-second lowering. Last set of 
- each exercise: go until two reps before failure\, however many that is.
+DESCRIPTION:3 × 12 tempo\, last set near-failure\n\n• Bent-over row — Hing
+ e to about 45°\, back flat. Pull to your hips\, not your chest. Pause a b
+ eat at the top.\n• Split squat — One foot forward\, one back\, long stanc
+ e. Straight down. All reps one side\, then the other.\n• Glute bridge — D
+ umbbell across the hips. Drive through your heels\, squeeze hard for a fu
+ ll second at the top.\n• Curl + overhead extension — Curl up\, press over
+ head\, lower behind your head. One continuous movement.\n• Dead bug — On 
+ your back\, arms up\, knees at 90°. Lower opposite arm and leg slowly. Lo
+ wer back stays glued down.\n\n3 sets of 12 with the 3-second lowering. La
+ st set of each: go to two reps before failure\, whatever that number is.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 6 · Strength B
@@ -3338,87 +874,21 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-245-20260924T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260924T103000
-DTEND:20260924T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-246-20260924T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260924T153000
-DTEND:20260924T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-247-20260925T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260925T070000
-DTEND:20260925T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-248-20260925T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260925T123000
-DTEND:20260925T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-249-20260925T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260925T183000
-DTEND:20260925T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-250-20260925T171500@eightweekkitchen
+UID:8wk-56-20260925T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260925T171500
 DTEND:20260925T175500
 SUMMARY:Week 6 · Strength A
 DESCRIPTION:3 × 10\, lighter and quicker\n\n• Goblet squat — One dumbbell 
- held at your chest. Sit down between your knees\, chest tall. Heels stay 
- down.\n• Dumbbell floor press — On your back on the floor\, knees bent. E
- lbows stop when they touch the ground — that is the depth.\n• Romanian de
- adlift — Dumbbells in front of your thighs. Push your hips BACK\, not dow
- n. Stop when you feel the hamstrings\, not when you reach the floor.\n• S
- houlder press — Seated or standing. Ribs down\, do not arch your lower ba
- ck to get the weight up.\n• Plank — Squeeze your glutes. Hips level with 
- shoulders. Stop the set when the hips start to sag\, not when the clock s
- ays so.\n\n3 sets of 12 with the 3-second lowering. Last set of each exer
- cise: go until two reps before failure\, however many that is.
+ at your chest. Sit down between your knees\, chest tall\, heels down.\n• 
+ Dumbbell floor press — On your back\, knees bent. Elbows stop when they t
+ ouch the floor — that is the depth.\n• Romanian deadlift — Push your hips
+  BACK\, not down. Stop when you feel the hamstrings\, not when you reach 
+ the floor.\n• Shoulder press — Ribs down. Do not arch your lower back to 
+ get the weight up.\n• Plank — Squeeze your glutes\, hips level with shoul
+ ders. The set ends when the hips sag\, not when the clock says.\n\n3 sets
+  of 12 with the 3-second lowering. Last set of each: go to two reps befor
+ e failure\, whatever that number is.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 6 · Strength A
@@ -3426,77 +896,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-251-20260925T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260925T103000
-DTEND:20260925T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-252-20260925T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260925T153000
-DTEND:20260925T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-253-20260926T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260926T070000
-DTEND:20260926T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-254-20260926T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260926T123000
-DTEND:20260926T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-255-20260926T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260926T183000
-DTEND:20260926T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-256-20260926T073000@eightweekkitchen
+UID:8wk-57-20260926T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260926T073000
 DTEND:20260926T081500
 SUMMARY:Week 6 · Walk 40 min
-DESCRIPTION:3.5 mph\, 2% incline. Longest walk so far.
+DESCRIPTION:3.5 mph\, 2%. Longest walk so far.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 6 · Walk 40 min
@@ -3504,101 +909,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-257-20260926T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260926T103000
-DTEND:20260926T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-258-20260926T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260926T153000
-DTEND:20260926T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-259-20260927T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260927T070000
-DTEND:20260927T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-260-20260927T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260927T123000
-DTEND:20260927T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-261-20260927T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260927T183000
-DTEND:20260927T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-262-20260927T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260927T093000
-DTEND:20260927T101500
-SUMMARY:Shop · block 4 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 4 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-263-20260927T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260927T100000
-DTEND:20260927T115000
-SUMMARY:Meal prep · Lock in
-DESCRIPTION:2½ lb chicken thighs — half Greek\, half Tex-Mex\nVegetable tr
- ay\, your choice of vegetables\n2 cups rice\nTurkey chili — 5 servings\, 
- freeze 2\n8 hard-boiled eggs\nShakshuka base\nBoth sauces\n3 jars overnig
- ht oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Lock in
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-264-20260927T070000@eightweekkitchen
+UID:8wk-58-20260927T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260927T070000
 DTEND:20260927T070500
@@ -3611,88 +922,51 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-265-20260927T103000@eightweekkitchen
+UID:8wk-59-20260927T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260927T103000
-DTEND:20260927T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260927T093000
+DTEND:20260927T101500
+SUMMARY:Shop · block 4 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 4 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-266-20260927T153000@eightweekkitchen
+UID:8wk-60-20260927T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260927T153000
-DTEND:20260927T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20260927T100000
+DTEND:20260927T115000
+SUMMARY:Meal prep · Fructose\, polyols\, and your own list
+DESCRIPTION:Garlic-infused oil\, or real garlic if week 5 passed\n2½ lb ch
+ icken thighs\, seasoned your way\nVegetable tray\, whatever you now know 
+ you tolerate\n2 cups rice\nA batch pot — chili\, chicken soup or lentil s
+ oup depending on week 6\n8 hard-boiled eggs\nSauces\n3 jars overnight oat
+ s
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-267-20260928T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260928T070000
-DTEND:20260928T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-268-20260928T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260928T123000
-DTEND:20260928T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-269-20260928T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260928T183000
-DTEND:20260928T191000
-SUMMARY:Dinner · Chicken curry in a hurry
-DESCRIPTION:550 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Chicken curry in a hurry
+DESCRIPTION:Meal prep · Fructose\, polyols\, and your own list
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-270-20260928T171500@eightweekkitchen
+UID:8wk-61-20260928T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260928T171500
 DTEND:20260928T175500
 SUMMARY:Week 7 · Strength A
 DESCRIPTION:3 × 12 tempo + drop set on squats\n\n• Goblet squat — One dumb
- bell held at your chest. Sit down between your knees\, chest tall. Heels 
- stay down.\n• Dumbbell floor press — On your back on the floor\, knees be
- nt. Elbows stop when they touch the ground — that is the depth.\n• Romani
- an deadlift — Dumbbells in front of your thighs. Push your hips BACK\, no
- t down. Stop when you feel the hamstrings\, not when you reach the floor.
- \n• Shoulder press — Seated or standing. Ribs down\, do not arch your low
- er back to get the weight up.\n• Plank — Squeeze your glutes. Hips level 
- with shoulders. Stop the set when the hips start to sag\, not when the cl
- ock says so.\n\n3 sets of 12\, tempo\, plus one drop set at the end of sq
- uats and rows: finish your last set\, drop to a lighter weight\, do 10 mo
- re immediately.
+ bell at your chest. Sit down between your knees\, chest tall\, heels down
+ .\n• Dumbbell floor press — On your back\, knees bent. Elbows stop when t
+ hey touch the floor — that is the depth.\n• Romanian deadlift — Push your
+  hips BACK\, not down. Stop when you feel the hamstrings\, not when you r
+ each the floor.\n• Shoulder press — Ribs down. Do not arch your lower bac
+ k to get the weight up.\n• Plank — Squeeze your glutes\, hips level with 
+ shoulders. The set ends when the hips sag\, not when the clock says.\n\n3
+  sets of 12 tempo\, plus a drop set on squats and rows: finish the last s
+ et\, drop to a lighter weight\, 10 more immediately.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 7 · Strength A
@@ -3700,78 +974,27 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-271-20260928T103000@eightweekkitchen
+UID:8wk-62-20260928T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260928T103000
-DTEND:20260928T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260928T070000
+DTEND:20260928T072000
+SUMMARY:Challenge 1/3 · Fructose
+DESCRIPTION:Mon — 2 tsp honey\n\nEverything else stays the same as last we
+ ek.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-272-20260928T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260928T153000
-DTEND:20260928T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-273-20260929T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260929T070000
-DTEND:20260929T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-274-20260929T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260929T123000
-DTEND:20260929T130500
-SUMMARY:Lunch · Tex-Mex chicken bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tex-Mex chicken bowl
+DESCRIPTION:Challenge 1/3 · Fructose
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-275-20260929T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260929T183000
-DTEND:20260929T191000
-SUMMARY:Dinner · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Turkey chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-276-20260929T073000@eightweekkitchen
+UID:8wk-63-20260929T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260929T073000
 DTEND:20260929T081500
 SUMMARY:Week 7 · Intervals ×7
-DESCRIPTION:5 min warm-up. 7 rounds of: 3 min at 3.5 / 1 min at 5.5. Cool-
- down. 38 min total.
+DESCRIPTION:5 min warm-up. 7 rounds of 3 min at 3.5 / 1 min at 5.5. Cool-d
+ own. 38 min.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 7 · Intervals ×7
@@ -3779,153 +1002,50 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-277-20260929T103000@eightweekkitchen
+UID:8wk-64-20260929T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20260929T103000
-DTEND:20260929T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260929T070000
+DTEND:20260929T072000
+SUMMARY:Challenge 2/3 · Fructose
+DESCRIPTION:Tue — 1 tbsp honey or ½ mango\n\nEverything else stays the sam
+ e as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Challenge 2/3 · Fructose
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-278-20260929T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260929T153000
-DTEND:20260929T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-279-20260930T070000@eightweekkitchen
+UID:8wk-65-20260930T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20260930T070000
-DTEND:20260930T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
+DTEND:20260930T072000
+SUMMARY:Challenge 3/3 · Fructose
+DESCRIPTION:Wed — 1 whole apple\n\nEverything else stays the same as last 
+ week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-280-20260930T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260930T123000
-DTEND:20260930T130500
-SUMMARY:Lunch · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Turkey chili
+DESCRIPTION:Challenge 3/3 · Fructose
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-281-20260930T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260930T183000
-DTEND:20260930T191000
-SUMMARY:Dinner · Salmon rice bowl
-DESCRIPTION:520 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Salmon rice bowl
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-282-20260930T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260930T103000
-DTEND:20260930T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-283-20260930T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20260930T153000
-DTEND:20260930T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-284-20261001T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261001T070000
-DTEND:20261001T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-285-20261001T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261001T123000
-DTEND:20261001T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-286-20261001T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261001T183000
-DTEND:20261001T191000
-SUMMARY:Dinner · Soy-ginger beef bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Soy-ginger beef bowl
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-287-20261001T171500@eightweekkitchen
+UID:8wk-66-20261001T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261001T171500
 DTEND:20261001T175500
 SUMMARY:Week 7 · Strength B
 DESCRIPTION:3 × 12 tempo + drop set on rows\n\n• Bent-over row — Hinge to 
- about 45°\, back flat. Pull the dumbbells to your hips\, not your chest. 
- Pause for a beat at the top.\n• Split squat — One foot forward\, one back
- \, long stance. Drop straight down. Do all reps one side\, then the other
- .\n• Glute bridge — Dumbbell across your hips. Drive through your heels\,
-  squeeze hard at the top for a full second.\n• Curl + overhead extension 
- — Curl up\, then press overhead and lower behind your head. One continuou
- s movement\, no rest between.\n• Dead bug — On your back\, arms up\, knee
- s at 90°. Lower opposite arm and leg slowly. Lower back stays glued to th
- e floor.\n\n3 sets of 12\, tempo\, plus one drop set at the end of squats
-  and rows: finish your last set\, drop to a lighter weight\, do 10 more i
- mmediately.
+ about 45°\, back flat. Pull to your hips\, not your chest. Pause a beat a
+ t the top.\n• Split squat — One foot forward\, one back\, long stance. St
+ raight down. All reps one side\, then the other.\n• Glute bridge — Dumbbe
+ ll across the hips. Drive through your heels\, squeeze hard for a full se
+ cond at the top.\n• Curl + overhead extension — Curl up\, press overhead\
+ , lower behind your head. One continuous movement.\n• Dead bug — On your 
+ back\, arms up\, knees at 90°. Lower opposite arm and leg slowly. Lower b
+ ack stays glued down.\n\n3 sets of 12 tempo\, plus a drop set on squats a
+ nd rows: finish the last set\, drop to a lighter weight\, 10 more immedia
+ tely.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 7 · Strength B
@@ -3933,72 +1053,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-288-20261001T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261001T103000
-DTEND:20261001T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-289-20261001T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261001T153000
-DTEND:20261001T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-290-20261002T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261002T070000
-DTEND:20261002T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-291-20261002T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261002T123000
-DTEND:20261002T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-292-20261002T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261002T183000
-DTEND:20261002T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-293-20261002T073000@eightweekkitchen
+UID:8wk-67-20261002T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261002T073000
 DTEND:20261002T081500
@@ -4011,72 +1066,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-294-20261002T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261002T103000
-DTEND:20261002T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-295-20261002T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261002T153000
-DTEND:20261002T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-296-20261003T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261003T070000
-DTEND:20261003T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-297-20261003T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261003T123000
-DTEND:20261003T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-298-20261003T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261003T183000
-DTEND:20261003T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-299-20261003T073000@eightweekkitchen
+UID:8wk-68-20261003T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261003T073000
 DTEND:20261003T081500
@@ -4089,101 +1079,7 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-300-20261003T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261003T103000
-DTEND:20261003T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-301-20261003T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261003T153000
-DTEND:20261003T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-302-20261004T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261004T070000
-DTEND:20261004T072500
-SUMMARY:Breakfast · Shakshuka
-DESCRIPTION:400 kcal\, 26g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Shakshuka
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-303-20261004T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261004T123000
-DTEND:20261004T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-304-20261004T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261004T183000
-DTEND:20261004T191000
-SUMMARY:Dinner · Sheet-pan chicken & vegetables
-DESCRIPTION:490 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Sheet-pan chicken & vegetables
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-305-20261004T093000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261004T093000
-DTEND:20261004T101500
-SUMMARY:Shop · block 4 list
-DESCRIPTION:Two weeks of food in one trip.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shop · block 4 list
-TRIGGER:-PT30M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-306-20261004T100000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261004T100000
-DTEND:20261004T115000
-SUMMARY:Meal prep · Lock in
-DESCRIPTION:2½ lb chicken thighs — half Greek\, half Tex-Mex\nVegetable tr
- ay\, your choice of vegetables\n2 cups rice\nTurkey chili — 5 servings\, 
- freeze 2\n8 hard-boiled eggs\nShakshuka base\nBoth sauces\n3 jars overnig
- ht oats
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Meal prep · Lock in
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-307-20261004T070000@eightweekkitchen
+UID:8wk-69-20261004T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261004T070000
 DTEND:20261004T070500
@@ -4196,87 +1092,51 @@ TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-308-20261004T103000@eightweekkitchen
+UID:8wk-70-20261004T093000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20261004T103000
-DTEND:20261004T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20261004T093000
+DTEND:20261004T101500
+SUMMARY:Shop · block 4 list
+DESCRIPTION:Two weeks of food in one trip. Full list is in the app.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Shop · block 4 list
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-309-20261004T153000@eightweekkitchen
+UID:8wk-71-20261004T100000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20261004T153000
-DTEND:20261004T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
+DTSTART:20261004T100000
+DTEND:20261004T115000
+SUMMARY:Meal prep · Fructose\, polyols\, and your own list
+DESCRIPTION:Garlic-infused oil\, or real garlic if week 5 passed\n2½ lb ch
+ icken thighs\, seasoned your way\nVegetable tray\, whatever you now know 
+ you tolerate\n2 cups rice\nA batch pot — chili\, chicken soup or lentil s
+ oup depending on week 6\n8 hard-boiled eggs\nSauces\n3 jars overnight oat
+ s
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-310-20261005T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261005T070000
-DTEND:20261005T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-311-20261005T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261005T123000
-DTEND:20261005T130500
-SUMMARY:Lunch · Greek chicken bowl
-DESCRIPTION:520 kcal\, 42g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Greek chicken bowl
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-312-20261005T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261005T183000
-DTEND:20261005T191000
-SUMMARY:Dinner · Chicken curry in a hurry
-DESCRIPTION:550 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Chicken curry in a hurry
+DESCRIPTION:Meal prep · Fructose\, polyols\, and your own list
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-313-20261005T171500@eightweekkitchen
+UID:8wk-72-20261005T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261005T171500
 DTEND:20261005T175500
 SUMMARY:Week 8 · Strength A
-DESCRIPTION:3 × 12 tempo\n\n• Goblet squat — One dumbbell held at your che
- st. Sit down between your knees\, chest tall. Heels stay down.\n• Dumbbel
- l floor press — On your back on the floor\, knees bent. Elbows stop when 
- they touch the ground — that is the depth.\n• Romanian deadlift — Dumbbel
- ls in front of your thighs. Push your hips BACK\, not down. Stop when you
-  feel the hamstrings\, not when you reach the floor.\n• Shoulder press — 
- Seated or standing. Ribs down\, do not arch your lower back to get the we
- ight up.\n• Plank — Squeeze your glutes. Hips level with shoulders. Stop 
- the set when the hips start to sag\, not when the clock says so.\n\n3 set
- s of 12 tempo. On the last session of the week\, do one all-out set of ea
- ch exercise and write the number down — that is your new starting point.
+DESCRIPTION:3 × 12 tempo\n\n• Goblet squat — One dumbbell at your chest. S
+ it down between your knees\, chest tall\, heels down.\n• Dumbbell floor p
+ ress — On your back\, knees bent. Elbows stop when they touch the floor —
+  that is the depth.\n• Romanian deadlift — Push your hips BACK\, not down
+ . Stop when you feel the hamstrings\, not when you reach the floor.\n• Sh
+ oulder press — Ribs down. Do not arch your lower back to get the weight u
+ p.\n• Plank — Squeeze your glutes\, hips level with shoulders. The set en
+ ds when the hips sag\, not when the clock says.\n\n3 sets of 12 tempo. On
+  Saturday do one all-out set of each and write the number down — that is 
+ your new starting point.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 8 · Strength A
@@ -4284,78 +1144,27 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-314-20261005T103000@eightweekkitchen
+UID:8wk-73-20261005T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20261005T103000
-DTEND:20261005T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20261005T070000
+DTEND:20261005T072000
+SUMMARY:Challenge 1/3 · Polyols + wheat
+DESCRIPTION:Mon — ½ cup mushrooms\n\nEverything else stays the same as las
+ t week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-315-20261005T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261005T153000
-DTEND:20261005T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-316-20261006T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261006T070000
-DTEND:20261006T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-317-20261006T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261006T123000
-DTEND:20261006T130500
-SUMMARY:Lunch · Tex-Mex chicken bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tex-Mex chicken bowl
+DESCRIPTION:Challenge 1/3 · Polyols + wheat
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-318-20261006T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261006T183000
-DTEND:20261006T191000
-SUMMARY:Dinner · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Turkey chili
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-319-20261006T073000@eightweekkitchen
+UID:8wk-74-20261006T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261006T073000
 DTEND:20261006T081500
 SUMMARY:Week 8 · Intervals ×7
-DESCRIPTION:5 min warm-up. 7 rounds of: 3 min at 3.5 / 1.5 min at 5.5. Coo
- l-down. 41 min total.
+DESCRIPTION:5 min warm-up. 7 rounds of 3 min at 3.5 / 1.5 min at 5.5. Cool
+ -down. 41 min.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 8 · Intervals ×7
@@ -4363,152 +1172,49 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-320-20261006T103000@eightweekkitchen
+UID:8wk-75-20261006T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20261006T103000
-DTEND:20261006T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20261006T070000
+DTEND:20261006T072000
+SUMMARY:Challenge 2/3 · Polyols + wheat
+DESCRIPTION:Tue — 1 cup mushrooms or 2 apricots\n\nEverything else stays t
+ he same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
+DESCRIPTION:Challenge 2/3 · Polyols + wheat
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-321-20261006T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261006T153000
-DTEND:20261006T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-322-20261007T070000@eightweekkitchen
+UID:8wk-76-20261007T070000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261007T070000
-DTEND:20261007T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
+DTEND:20261007T072000
+SUMMARY:Challenge 3/3 · Polyols + wheat
+DESCRIPTION:Wed — 2 slices ordinary wheat bread\n\nEverything else stays t
+ he same as last week.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-323-20261007T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261007T123000
-DTEND:20261007T130500
-SUMMARY:Lunch · Turkey chili
-DESCRIPTION:450 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Turkey chili
+DESCRIPTION:Challenge 3/3 · Polyols + wheat
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-324-20261007T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261007T183000
-DTEND:20261007T191000
-SUMMARY:Dinner · Salmon rice bowl
-DESCRIPTION:520 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Salmon rice bowl
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-325-20261007T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261007T103000
-DTEND:20261007T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-326-20261007T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261007T153000
-DTEND:20261007T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-327-20261008T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261008T070000
-DTEND:20261008T072500
-SUMMARY:Breakfast · Veggie scramble
-DESCRIPTION:380 kcal\, 24g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Veggie scramble
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-328-20261008T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261008T123000
-DTEND:20261008T130500
-SUMMARY:Lunch · Chopped Mediterranean salad
-DESCRIPTION:480 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Chopped Mediterranean salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-329-20261008T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261008T183000
-DTEND:20261008T191000
-SUMMARY:Dinner · Soy-ginger beef bowl
-DESCRIPTION:540 kcal\, 40g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Soy-ginger beef bowl
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-330-20261008T171500@eightweekkitchen
+UID:8wk-77-20261008T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261008T171500
 DTEND:20261008T175500
 SUMMARY:Week 8 · Strength B
 DESCRIPTION:3 × 12 tempo\n\n• Bent-over row — Hinge to about 45°\, back fl
- at. Pull the dumbbells to your hips\, not your chest. Pause for a beat at
-  the top.\n• Split squat — One foot forward\, one back\, long stance. Dro
- p straight down. Do all reps one side\, then the other.\n• Glute bridge —
-  Dumbbell across your hips. Drive through your heels\, squeeze hard at th
- e top for a full second.\n• Curl + overhead extension — Curl up\, then pr
- ess overhead and lower behind your head. One continuous movement\, no res
- t between.\n• Dead bug — On your back\, arms up\, knees at 90°. Lower opp
- osite arm and leg slowly. Lower back stays glued to the floor.\n\n3 sets 
- of 12 tempo. On the last session of the week\, do one all-out set of each
-  exercise and write the number down — that is your new starting point.
+ at. Pull to your hips\, not your chest. Pause a beat at the top.\n• Split
+  squat — One foot forward\, one back\, long stance. Straight down. All re
+ ps one side\, then the other.\n• Glute bridge — Dumbbell across the hips.
+  Drive through your heels\, squeeze hard for a full second at the top.\n•
+  Curl + overhead extension — Curl up\, press overhead\, lower behind your
+  head. One continuous movement.\n• Dead bug — On your back\, arms up\, kn
+ ees at 90°. Lower opposite arm and leg slowly. Lower back stays glued dow
+ n.\n\n3 sets of 12 tempo. On Saturday do one all-out set of each and writ
+ e the number down — that is your new starting point.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 8 · Strength B
@@ -4516,88 +1222,22 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-331-20261008T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261008T103000
-DTEND:20261008T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-332-20261008T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261008T153000
-DTEND:20261008T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-333-20261009T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261009T070000
-DTEND:20261009T072500
-SUMMARY:Breakfast · Overnight oats
-DESCRIPTION:380 kcal\, 22g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Overnight oats
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-334-20261009T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261009T123000
-DTEND:20261009T130500
-SUMMARY:Lunch · Ginger fried rice\, egg & edamame
-DESCRIPTION:500 kcal\, 30g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Ginger fried rice\, egg & edamame
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-335-20261009T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261009T183000
-DTEND:20261009T191000
-SUMMARY:Dinner · Garlic-tomato pasta\, turkey meatballs
-DESCRIPTION:580 kcal\, 38g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Garlic-tomato pasta\, turkey meatballs
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-336-20261009T171500@eightweekkitchen
+UID:8wk-78-20261009T171500@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261009T171500
 DTEND:20261009T175500
 SUMMARY:Week 8 · Test day
 DESCRIPTION:One all-out set of each Strength A exercise. Write down the re
- ps.\n\n• Goblet squat — One dumbbell held at your chest. Sit down between
-  your knees\, chest tall. Heels stay down.\n• Dumbbell floor press — On y
- our back on the floor\, knees bent. Elbows stop when they touch the groun
- d — that is the depth.\n• Romanian deadlift — Dumbbells in front of your 
- thighs. Push your hips BACK\, not down. Stop when you feel the hamstrings
- \, not when you reach the floor.\n• Shoulder press — Seated or standing. 
- Ribs down\, do not arch your lower back to get the weight up.\n• Plank — 
- Squeeze your glutes. Hips level with shoulders. Stop the set when the hip
- s start to sag\, not when the clock says so.\n\n3 sets of 12 tempo. On th
- e last session of the week\, do one all-out set of each exercise and writ
- e the number down — that is your new starting point.
+ ps.\n\n• Goblet squat — One dumbbell at your chest. Sit down between your
+  knees\, chest tall\, heels down.\n• Dumbbell floor press — On your back\
+ , knees bent. Elbows stop when they touch the floor — that is the depth.\
+ n• Romanian deadlift — Push your hips BACK\, not down. Stop when you feel
+  the hamstrings\, not when you reach the floor.\n• Shoulder press — Ribs 
+ down. Do not arch your lower back to get the weight up.\n• Plank — Squeez
+ e your glutes\, hips level with shoulders. The set ends when the hips sag
+ \, not when the clock says.\n\n3 sets of 12 tempo. On Saturday do one all
+ -out set of each and write the number down — that is your new starting po
+ int.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 8 · Test day
@@ -4605,77 +1245,12 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-337-20261009T103000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261009T103000
-DTEND:20261009T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-338-20261009T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261009T153000
-DTEND:20261009T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-339-20261010T070000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261010T070000
-DTEND:20261010T072500
-SUMMARY:Breakfast · Greek yogurt bowl
-DESCRIPTION:330 kcal\, 25g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Breakfast · Greek yogurt bowl
-TRIGGER:-PT5M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-340-20261010T123000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261010T123000
-DTEND:20261010T130500
-SUMMARY:Lunch · Tuna & chickpea salad
-DESCRIPTION:420 kcal\, 35g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Lunch · Tuna & chickpea salad
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-341-20261010T183000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261010T183000
-DTEND:20261010T191000
-SUMMARY:Dinner · Flex night
-DESCRIPTION:600 kcal\, 0g protein
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Dinner · Flex night
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-342-20261010T073000@eightweekkitchen
+UID:8wk-79-20261010T073000@eightweekkitchen
 DTSTAMP:20260815T120000Z
 DTSTART:20261010T073000
 DTEND:20261010T081500
 SUMMARY:Week 8 · Walk 45 min
-DESCRIPTION:Last session. Weigh in\, take a photo\, compare it to week 4.
+DESCRIPTION:Last session. Weigh in\, take a photo\, compare to week 4.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Week 8 · Walk 45 min
@@ -4683,28 +1258,17 @@ TRIGGER:-PT20M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:8wk-343-20261010T103000@eightweekkitchen
+UID:8wk-80-20260816T210000@eightweekkitchen
 DTSTAMP:20260815T120000Z
-DTSTART:20261010T103000
-DTEND:20261010T103500
-SUMMARY:Water check
-DESCRIPTION:Roughly a third of the day's water by now.
+DTSTART:20260816T210000
+DTEND:20260816T210500
+RRULE:FREQ=DAILY;COUNT=56
+SUMMARY:Score bloating and gas
+DESCRIPTION:Open the app and log tonight. The pattern across a week is the
+  point\, not any single day.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Water check
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8wk-344-20261010T153000@eightweekkitchen
-DTSTAMP:20260815T120000Z
-DTSTART:20261010T153000
-DTEND:20261010T153500
-SUMMARY:Water check
-DESCRIPTION:Two thirds by now. Second snack if you are hungry.
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Water check
+DESCRIPTION:Score bloating and gas
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT

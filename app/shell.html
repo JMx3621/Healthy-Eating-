@@ -226,6 +226,20 @@ function meals(k){ return sget('m:'+k, {}); }
 function toggleMeal(k, slot){ var m = meals(k); m[slot] = !m[slot]; sset('m:'+k, m); }
 function workoutDone(k){ return sget('x:'+k, false); }
 function toggleWorkout(k){ sset('x:'+k, !workoutDone(k)); }
+function symptoms(k){ return sget('sy:'+k, null); }
+function setSymptom(k, which, val){
+  var s = symptoms(k) || {};
+  s[which] = (s[which] === val) ? null : val;
+  sset('sy:'+k, s);
+}
+/* gut phase for a program week */
+function phaseFor(week){ return PHASES[Math.max(0, Math.min(7, week-1))]; }
+/* challenge days are Mon/Tue/Wed of a challenge week */
+function challengeDay(week, dow){
+  var ph = phaseFor(week);
+  if (!ph.ch || dow < 1 || dow > 3) return null;
+  return { key: ph.ch, def: REINTRO[ph.ch], dose: REINTRO[ph.ch].d[dow-1], n: dow };
+}
 
 function waterGoalFor(dateKey){
   var p = position(dateKey);
@@ -278,14 +292,39 @@ function renderToday(){
   if (goal > S.waterGoal) out += '<p class="muted" style="margin-top:10px">+20 oz today because you are training.</p>';
   out += '</div>';
 
+  /* gut phase + any active challenge */
+  var ph = phaseFor(p.week), chal = challengeDay(p.week, p.dow);
+  if (chal){
+    out += '<div class="card" style="border-left:4px solid var(--amber)">'
+        + '<p class="eyebrow" style="color:var(--amber)">Challenge day '+chal.n+' of 3 · '+chal.def.n+'</p>'
+        + '<h3>'+chal.dose+'</h3>'
+        + '<p class="muted">Everything else on the plate stays exactly as it was last week. One variable at a time.</p>'
+        + '<p class="muted">If this hits you hard, stop now and go back to baseline — you already have your answer.</p></div>';
+  } else if (ph.ch && p.dow >= 4){
+    out += '<div class="card tight"><p class="eyebrow">Washout · '+REINTRO[ph.ch].n+'</p>'
+        + '<p class="muted">Back to baseline food until Sunday. Keep scoring — the tail of a reaction is as informative as the peak.</p></div>';
+  }
+
   out += '<div class="card"><p class="eyebrow">Eat · block '+blk.id+', '+blk.name+'</p>'
       + mealRow(SCHEDULE.breakfast,'Breakfast', RECIPES[day.b].n, 'b', k, day.b)
-      + mealRow(SCHEDULE.snack1,'Snack', SNACKS[day.s].n, 's1', k, null)
       + mealRow(SCHEDULE.lunch,'Lunch', RECIPES[day.l].n, 'l', k, day.l)
-      + mealRow(SCHEDULE.snack2,'Snack', 'Second snack if hungry', 's2', k, null)
+      + mealRow(SCHEDULE.snack1,'Only snack of the day', SNACKS[day.s].n, 's1', k, null)
       + mealRow(SCHEDULE.dinner,'Dinner', RECIPES[day.dn].n, 'dn', k, day.dn)
-      + '<p class="muted" style="margin-top:12px">Kitchen closes '+hhmm(SCHEDULE.close)+'. Nothing after that but water and tea.</p>'
+      + mealRow(SCHEDULE.postwalk,'After dinner', 'Ten minute walk', 'pw', k, null)
+      + '<p class="muted" style="margin-top:12px">Three meals, one snack, nothing in between — the gut runs a cleaning wave between meals and grazing switches it off. Kitchen closes '+hhmm(SCHEDULE.close)+'.</p>'
       + '</div>';
+
+  /* symptom log */
+  var sy = symptoms(k) || {};
+  out += '<div class="card"><p class="eyebrow">Tonight\'s score</p>';
+  [['bloat','Bloating'],['gas','Gas']].forEach(function(pair){
+    out += '<div style="margin-bottom:12px"><div class="muted" style="font-size:.85rem;margin-bottom:6px">'+pair[1]+'</div><div class="pillrow" style="margin:0">';
+    ['None','Mild','Moderate','Bad'].forEach(function(lab, v){
+      out += '<button class="pill'+(sy[pair[0]] === v ? ' on' : '')+'" data-sym="'+pair[0]+'" data-val="'+v+'" style="flex:1">'+lab+'</button>';
+    });
+    out += '</div></div>';
+  });
+  out += '<p class="muted">Score it at the same time each evening. One bad day means nothing; a pattern across a week means everything.</p></div>';
 
   var isRest = td.ty === 'rest', isPrep = td.ty === 'prep';
   var slot = isPrep ? SCHEDULE.prep : (td.ty === 'walk' || td.ty === 'intervals') ? '07:30' : SCHEDULE.workout;
@@ -305,14 +344,73 @@ function renderToday(){
   }
   out += '</div>';
 
-  out += '<div class="card tight"><p class="eyebrow">This week</p><p>'+tr.focus+'</p></div>';
+  out += '<div class="card tight"><p class="eyebrow">This week · '+ph.ph.toLowerCase()+'</p><p>'+ph.note+'</p>'
+      + '<p class="muted" style="margin-top:8px">'+tr.focus+'</p></div>';
   return out;
+}
+
+function symptomChart(){
+  var start = parseYmd(S.start), rows = [], any = false;
+  for (var i = 0; i < 56; i++){
+    var d = new Date(start); d.setDate(d.getDate()+i);
+    var s = symptoms(ymd(d));
+    var v = s ? Math.max(s.bloat == null ? -1 : s.bloat, s.gas == null ? -1 : s.gas) : -1;
+    if (v >= 0) any = true;
+    rows.push(v);
+  }
+  if (!any) return '';
+  var cols = ['var(--line)','var(--accent)','#B8A33A','var(--amber)','var(--alert)'];
+  var h = '<div class="card"><p class="eyebrow">Eight weeks of symptoms</p><div style="display:grid;grid-template-columns:repeat(28,1fr);gap:2px">';
+  rows.forEach(function(v, i){
+    var wk = Math.floor(i/7)+1;
+    h += '<div title="Week '+wk+'" style="aspect-ratio:1;border-radius:2px;background:'+(v<0?'var(--sunken)':cols[v+1])+'"></div>';
+  });
+  h += '</div><div class="muted" style="display:flex;gap:10px;margin-top:10px;font-size:.78rem;flex-wrap:wrap">';
+  ['none','mild','moderate','bad'].forEach(function(l, i){
+    h += '<span><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:'+cols[i+1]+';margin-right:4px"></span>'+l+'</span>';
+  });
+  h += '</div><p class="muted" style="margin-top:10px">Two rows per week, left to right. This grid is the thing to photograph and take to a doctor.</p></div>';
+  return h;
 }
 
 function renderPlan(){
   var p = position(todayKey()), out = '';
-  out += '<h2 class="sect">Eight weeks</h2>';
-  out += '<div class="note"><p>Four two-week menu blocks, each with its own shopping list. Training builds from two sessions a week to five. Every week repeats the same shape — Sunday prep, three or four training days, one flex meal.</p></div>';
+  out += '<h2 class="sect">The gut plan</h2>';
+  out += '<div class="note alert"><p><b>Before anything else.</b> Constant swelling in one hand is not a food problem and this plan will not touch it. One-sided swelling points at something local — a vein, the lymphatic system, inflammation, or nerve compression — and it needs a doctor rather than a diet. Mention the bloating at the same visit and let them decide whether the two are connected.</p>'
+      + '<p>Also worth saying: bloating that has gone on for months, or comes with weight loss you did not intend, blood, fever, or pain that wakes you up, is a see-someone situation rather than a try-this situation.</p></div>';
+
+  out += '<div class="card"><p class="eyebrow">How this works</p>'
+      + '<p>Three weeks on a deliberately gentle list, then five weeks putting the usual suspects back one group at a time. This is the standard way it is done, and the order matters — testing everything at once tells you nothing.</p>'
+      + '<p class="muted">This is a trial you run on yourself, not a diagnosis. It is designed to find <em>your</em> triggers, and the reintroduction half matters more than the elimination half. Do not stay on the gentle list forever — a narrow diet is its own problem.</p></div>';
+
+  out += '<div class="card"><p class="eyebrow">The two techniques everything rests on</p>';
+  TECHNIQUES.forEach(function(t){
+    out += '<h3 style="margin-top:14px">'+t.n+'</h3><p>'+t.d+'</p>';
+    if (t.w) out += '<div class="note alert" style="margin-top:8px"><p>'+t.w+'</p></div>';
+  });
+  out += '</div>';
+
+  out += '<div class="card"><p class="eyebrow">Habits that do as much as the food</p><ul class="exlist" style="border-top:none">';
+  GUT_HABITS.forEach(function(g){ out += '<li><b>'+g.n+'</b><span>'+g.d+'</span></li>'; });
+  out += '</ul></div>';
+
+  out += '<div class="card"><p class="eyebrow">The five challenges</p>';
+  Object.keys(REINTRO).forEach(function(key){
+    var r = REINTRO[key], wk = PHASES.filter(function(x){ return x.ch === key; })[0];
+    out += '<details class="acc" style="border:none;margin-bottom:6px"><summary style="padding:12px 0"><div>'
+        + '<span class="wname">Week '+wk.w+' · '+r.n+'</span><span class="wsub">'+r.f+'</span></div></summary>'
+        + '<div class="body" style="padding:6px 0 14px"><ul class="exlist" style="border-top:none">';
+    r.d.forEach(function(x){ out += '<li><b>'+x+'</b></li>'; });
+    out += '</ul><p class="muted">'+r.p+'</p></div></details>';
+  });
+  out += '<div class="note warn" style="margin-top:12px"><p><b>Rules for every challenge</b></p><ul style="margin:8px 0 0;padding-left:1.1em">';
+  CHALLENGE_RULES.forEach(function(r){ out += '<li>'+r+'</li>'; });
+  out += '</ul></div></div>';
+
+  out += '<div class="note alert"><p><b>One thing to get right about wheat.</b> Week 8 puts ordinary bread back on trial, and the plan uses rice pasta until then. That is about the fructans in wheat, not gluten. If you are ever going to be tested for coeliac disease, <b>the test only works while you are still eating wheat</b> — going gluten-free first produces a false negative and you have to eat it again for weeks to re-test. So if that is on the table at all, ask your doctor before you cut wheat out for good.</p></div>';
+
+  out += '<h2 class="sect">Eight weeks of training</h2>';
+  out += '<div class="note"><p>Four two-week menu blocks, each with its own shopping list. Training builds from two sessions a week to five. Every walk is also gut work — movement is the most reliable thing on the whole list for bloating.</p></div>';
   TRAINING.forEach(function(tr, wi){
     var wk = wi+1, blk = BLOCKS[Math.floor(wi/2)];
     var cls = (p.inProgram && p.week === wk) ? ' now' : (p.inProgram && p.week > wk) ? ' past' : '';
@@ -414,6 +512,10 @@ function renderMe(){
   var weights = sget('weights', []);
   out += '<h2 class="sect">Me</h2>';
 
+  out += '<div class="note alert"><p><b>Get the hand looked at.</b> Constant swelling in one hand is the thing in this app that most needs a person rather than a plan. Nothing here treats it.</p></div>';
+
+  out += symptomChart();
+
   if (!STORE_OK){
     out += '<div class="note alert"><p><b>This browser is not letting the app save anything.</b> Water and check-offs will reset when you close it. Everything else — the plan, recipes, lists — works fine. Opening the page in Chrome directly rather than inside another app usually fixes it.</p></div>';
   }
@@ -443,11 +545,11 @@ function renderMe(){
   out += '</div>';
 
   out += '<div class="card"><p class="eyebrow">Calendar</p>'
-    + '<p>Puts all 56 days into your phone calendar — every meal by name, every workout, prep sessions, shopping and weigh-ins, with alerts.</p>'
+    + '<p>The lean version: workouts, Sunday prep, shopping, weigh-ins, challenge doses, and one repeating nightly reminder to score your symptoms. Meals are in the app rather than your calendar.</p>'
     + '<button class="btn" id="btnCal">Save calendar file</button>'
     + '<div id="calMsg"></div>'
     + '<div class="note warn"><p><b>Android:</b> the file saves as <span class="num">.txt</span> because that is all this page is allowed to hand you. Rename it to <span class="num">eight-week.ics</span> in Files, then open it — Google Calendar takes it from there.</p>'
-    + '<p>Import into a <b>new, separate calendar</b> rather than your main one. Then you can hide or delete all 300-odd events in one action instead of one at a time.</p></div></div>';
+    + '<p>Import into a <b>new, separate calendar</b> rather than your main one. Then you can hide or delete the whole set in one action instead of one at a time.</p></div></div>';
 
   out += '<div class="card"><p class="eyebrow">Your data</p>'
     + '<p class="muted">Everything lives on this phone only. Nothing is uploaded anywhere.</p>'
@@ -533,25 +635,15 @@ function buildICS(){
   for (var i = 0; i < 56; i++){
     var d = new Date(start); d.setDate(d.getDate() + i);
     var week = Math.floor(i/7) + 1, dow = i % 7, blk = BLOCKS[Math.min(3, Math.floor(Math.floor(i/7)/2))];
-    var day = blk.days[dow], tr = TRAINING[week-1], td = tr.days[dow];
-
-    ev(atTime(d, SCHEDULE.breakfast), atTime(d, SCHEDULE.breakfast, 25),
-       'Breakfast · ' + RECIPES[day.b].n.replace(/&amp;/g,'&'),
-       RECIPES[day.b].k + ' kcal, ' + RECIPES[day.b].p + 'g protein', 5);
-    ev(atTime(d, SCHEDULE.lunch), atTime(d, SCHEDULE.lunch, 35),
-       'Lunch · ' + RECIPES[day.l].n.replace(/&amp;/g,'&'),
-       RECIPES[day.l].k + ' kcal, ' + RECIPES[day.l].p + 'g protein', 10);
-    ev(atTime(d, SCHEDULE.dinner), atTime(d, SCHEDULE.dinner, 40),
-       'Dinner · ' + RECIPES[day.dn].n.replace(/&amp;/g,'&'),
-       RECIPES[day.dn].k + ' kcal, ' + RECIPES[day.dn].p + 'g protein', 15);
+    var tr = TRAINING[week-1], td = tr.days[dow];
 
     if (td.ty === 'prep'){
-      ev(atTime(d, SCHEDULE.shop), atTime(d, SCHEDULE.shop, 45), 'Shop · block ' + blk.id + ' list',
-         'Two weeks of food in one trip.', 30);
-      ev(atTime(d, SCHEDULE.prep), atTime(d, SCHEDULE.prep, 110), 'Meal prep · ' + blk.name,
-         blk.prep.join('\n').replace(/&amp;/g,'&'), 15);
       ev(atTime(d, '07:00'), atTime(d, '07:00', 5), 'Weigh in',
          'Same morning, same conditions, before breakfast.', 0);
+      ev(atTime(d, SCHEDULE.shop), atTime(d, SCHEDULE.shop, 45), 'Shop · block ' + blk.id + ' list',
+         'Two weeks of food in one trip. Full list is in the app.', 30);
+      ev(atTime(d, SCHEDULE.prep), atTime(d, SCHEDULE.prep, 110), 'Meal prep · ' + blk.name,
+         blk.prep.join('\n').replace(/&amp;/g,'&'), 15);
     } else if (td.ty !== 'rest'){
       var slot = (td.ty === 'walk' || td.ty === 'intervals') ? '07:30' : SCHEDULE.workout;
       var mins = td.ty === 'strength' ? 40 : 45;
@@ -560,9 +652,27 @@ function buildICS(){
       ev(atTime(d, slot), atTime(d, slot, mins), 'Week ' + week + ' · ' + td.t, desc, 20);
     }
 
-    ev(atTime(d, '10:30'), atTime(d, '10:30', 5), 'Water check', 'Roughly a third of the day\'s water by now.', 0);
-    ev(atTime(d, '15:30'), atTime(d, '15:30', 5), 'Water check', 'Two thirds by now. Also: second snack if you are hungry.', 0);
+    var ch = challengeDay(week, dow);
+    if (ch){
+      ev(atTime(d, SCHEDULE.breakfast), atTime(d, SCHEDULE.breakfast, 20),
+         'Challenge ' + ch.n + '/3 · ' + ch.def.n.replace(/&amp;/g,'&'),
+         ch.dose + '\n\nEverything else stays the same as last week.', 10);
+    }
   }
+  /* one repeating nightly reminder instead of 112 separate ones */
+  var last = new Date(start); last.setDate(last.getDate() + 55);
+  uid++;
+  L.push('BEGIN:VEVENT');
+  L.push('UID:8wk-log@eightweekkitchen');
+  L.push('DTSTAMP:' + icsStamp(new Date()) + 'Z');
+  L.push('DTSTART:' + icsStamp(atTime(start, '21:00')));
+  L.push('DTEND:' + icsStamp(atTime(start, '21:00', 5)));
+  L.push('RRULE:FREQ=DAILY;COUNT=56');
+  L.push('SUMMARY:Score bloating and gas');
+  L.push('DESCRIPTION:Open the app and log tonight. The pattern across a week is the point\\, not any single day.');
+  L.push('BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Score bloating and gas','TRIGGER:-PT0M','END:VALARM');
+  L.push('END:VEVENT');
+
   L.push('END:VCALENDAR');
   return L.join('\r\n');
 }
@@ -591,8 +701,8 @@ async function exportData(){
   var start = parseYmd(S.start);
   for (var i = 0; i < 56; i++){
     var d = new Date(start); d.setDate(d.getDate()+i);
-    var k = ymd(d), w = water(k), m = meals(k), x = workoutDone(k);
-    if (w || Object.keys(m).length || x) dump.days[k] = { water:w, meals:m, workout:x };
+    var k = ymd(d), w = water(k), m = meals(k), x = workoutDone(k), sy = symptoms(k);
+    if (w || Object.keys(m).length || x || sy) dump.days[k] = { water:w, meals:m, workout:x, symptoms:sy };
   }
   if (!dl){ alert('Saving is not available here. Your data is safe on this device.'); return; }
   try { await dl.save({ filename:'eight-week-log.json', data: JSON.stringify(dump, null, 2) }); } catch(e){}
@@ -625,13 +735,14 @@ function render(){
 }
 
 document.addEventListener('click', function(e){
-  var t = e.target.closest('[data-tab],[data-water],[data-meal],[data-workout],[data-recipe],[data-block],[data-shop]');
+  var t = e.target.closest('[data-tab],[data-water],[data-meal],[data-workout],[data-recipe],[data-block],[data-shop],[data-sym]');
   if (t){
     if (t.dataset.tab){ TAB = t.dataset.tab; render(); return; }
     if (t.dataset.water){ var k = todayKey(); setWater(k, water(k) + (+t.dataset.water)); render(); return; }
     if (t.dataset.meal){ toggleMeal(t.dataset.date, t.dataset.meal); render(); return; }
     if (t.dataset.workout){ toggleWorkout(t.dataset.workout); render(); return; }
     if (t.dataset.recipe){ openRecipe(t.dataset.recipe); return; }
+    if (t.dataset.sym){ setSymptom(todayKey(), t.dataset.sym, +t.dataset.val); render(); return; }
     if (t.dataset.block){ window.__foodBlock = +t.dataset.block; render(); return; }
     if (t.dataset.shop){ window.__shopBlock = +t.dataset.shop; render(); return; }
   }

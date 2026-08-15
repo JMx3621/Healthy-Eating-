@@ -1,3 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2E6440">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>The Eight Week Kitchen</title>
 <style>
   :root{
@@ -161,7 +170,8 @@
 
   .hide{display:none}
 </style>
-
+</head>
+<body>
 <div class="app">
   <div class="hdr">
     <h1>The Eight Week Kitchen</h1>
@@ -1177,3 +1187,6 @@ document.addEventListener('change', function(e){
 
 render();
 </script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script>
+</body>
+</html>
