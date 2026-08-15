@@ -1,0 +1,991 @@
+<title>The Sunday Kitchen</title>
+<style>
+  /* ---- Tokens: light is the base, both dark states redefine ---- */
+  :root {
+    --ground:      #F5F7F2;
+    --surface:     #FFFFFF;
+    --surface-alt: #EDF0E8;
+    --ink:         #1A1F17;
+    --ink-soft:    #414839;
+    --muted:       #6B7263;
+    --line:        #D8DCD0;
+    --line-soft:   #E6E9DF;
+    --accent:      #2E6440;
+    --accent-soft: #E2EDE3;
+    --amber:       #8A6209;
+    --amber-soft:  #F5EBD3;
+    --alert:       #A5382B;
+    --alert-soft:  #F8E5E1;
+    --alert-line:  #E0B5AD;
+
+    --display: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    --body: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    --measure: 68ch;
+    --band: 1120px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #11140F;
+      --surface:     #191D16;
+      --surface-alt: #212619;
+      --ink:         #ECEFE5;
+      --ink-soft:    #C3C9B8;
+      --muted:       #949B89;
+      --line:        #333A2C;
+      --line-soft:   #262C21;
+      --accent:      #86C596;
+      --accent-soft: #1E2C21;
+      --amber:       #D9AE4E;
+      --amber-soft:  #2C2415;
+      --alert:       #EE9184;
+      --alert-soft:  #2E1A16;
+      --alert-line:  #5A312A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:      #11140F;
+    --surface:     #191D16;
+    --surface-alt: #212619;
+    --ink:         #ECEFE5;
+    --ink-soft:    #C3C9B8;
+    --muted:       #949B89;
+    --line:        #333A2C;
+    --line-soft:   #262C21;
+    --accent:      #86C596;
+    --accent-soft: #1E2C21;
+    --amber:       #D9AE4E;
+    --amber-soft:  #2C2415;
+    --alert:       #EE9184;
+    --alert-soft:  #2E1A16;
+    --alert-line:  #5A312A;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 24px 96px;
+  }
+
+  .wrap { max-width: var(--band); margin: 0 auto; }
+  .col  { max-width: var(--measure); }
+
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ---- Masthead ---- */
+  .mast {
+    padding: 72px 0 40px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .mast .kicker {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 20px;
+  }
+  .mast h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0 0 22px;
+  }
+  .mast .standfirst {
+    font-size: 1.16rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin: 0 0 32px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .chips li {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .02em;
+    padding: 5px 11px;
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    background: var(--surface);
+    color: var(--ink-soft);
+  }
+  .chips li b { color: var(--ink); font-weight: 600; }
+
+  /* ---- Sections ---- */
+  section { padding-top: 64px; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(1.85rem, 3.6vw, 2.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 8px;
+  }
+  .rule { height: 1px; background: var(--line); margin: 20px 0 28px; }
+  h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin: 36px 0 10px;
+  }
+  h4 {
+    font-family: var(--body);
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 26px 0 10px;
+  }
+  p { margin: 0 0 16px; }
+  .lede { font-size: 1.06rem; color: var(--ink-soft); }
+  ul, ol { margin: 0 0 16px; padding-left: 1.25em; }
+  li { margin-bottom: 7px; }
+  strong { font-weight: 650; }
+  em.note { color: var(--muted); font-style: italic; }
+
+  /* ---- Allergy card ---- */
+  .allergy {
+    background: var(--alert-soft);
+    border: 1px solid var(--alert-line);
+    border-left: 5px solid var(--alert);
+    border-radius: 3px;
+    padding: 28px 30px;
+    margin-top: 8px;
+  }
+  .allergy h2 { color: var(--alert); margin-bottom: 4px; }
+  .allergy .eyebrow { color: var(--alert); }
+  .allergen { margin-top: 24px; }
+  .allergen:first-of-type { margin-top: 20px; }
+  .allergen-name {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--alert);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .allergen p { margin: 0 0 6px; font-size: .97rem; }
+  .allergen p:last-child { margin-bottom: 0; }
+
+  /* ---- Stat row ---- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 4px 0 28px;
+  }
+  .stat { background: var(--surface); padding: 18px 20px; }
+  .stat .val {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1.1;
+    display: block;
+  }
+  .stat .lbl {
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+    display: block;
+  }
+
+  /* ---- Week grid ---- */
+  .scroller { overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    background: var(--surface-alt);
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.day {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .kcal {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 12px;
+    color: var(--muted);
+    display: block;
+    margin-top: 3px;
+  }
+  .week-table td:not(.day) { min-width: 190px; }
+  tr.prep-day td { background: var(--amber-soft); }
+  tr.prep-day td.day { color: var(--amber); }
+
+  /* ---- Timeline (a real clock sequence) ---- */
+  .timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    gap: 18px;
+    padding: 0 0 22px 22px;
+    position: relative;
+    margin: 0;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--ground);
+    border: 2px solid var(--accent);
+  }
+  .timeline .t {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    padding-top: 2px;
+  }
+  .timeline .what { font-size: .97rem; }
+  .timeline .what b { display: block; margin-bottom: 2px; }
+  .timeline .what span { color: var(--ink-soft); }
+
+  /* ---- Recipe cards ---- */
+  .recipes { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+  .recipe {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 22px 24px 24px;
+  }
+  .recipe h3 { margin: 0 0 4px; font-size: 1.22rem; }
+  .recipe .meta {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .recipe .meta b { color: var(--accent); font-weight: 600; }
+  .recipe h4 { margin: 0 0 8px; font-size: .74rem; }
+  .recipe ul { padding-left: 1.1em; margin-bottom: 14px; font-size: .93rem; }
+  .recipe ol { padding-left: 1.2em; margin-bottom: 0; font-size: .93rem; }
+  .recipe li { margin-bottom: 5px; }
+
+  /* ---- Grocery list ---- */
+  .grocery { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; }
+  .aisle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 20px 22px 22px;
+  }
+  .aisle h4 {
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line-soft);
+    color: var(--accent);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .aisle h4 .sum { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); }
+  .aisle ul { list-style: none; padding: 0; margin: 0; }
+  .aisle li { margin: 0; }
+  .aisle label {
+    display: grid;
+    grid-template-columns: 18px 1fr auto;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px 0;
+    font-size: .92rem;
+    cursor: pointer;
+  }
+  .aisle input { margin: 0; accent-color: var(--accent); width: 15px; height: 15px; align-self: center; }
+  .aisle .price { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: .82rem; color: var(--muted); }
+  .aisle input:checked ~ .item { text-decoration: line-through; color: var(--muted); }
+  .aisle .pantry-flag { color: var(--amber); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; }
+
+  /* ---- Swaps ---- */
+  .swap-table td:first-child { color: var(--muted); }
+  .swap-table td:nth-child(2) { font-weight: 600; }
+  .swap-table td:nth-child(3) { color: var(--ink-soft); font-size: .88rem; }
+
+  /* ---- Callout ---- */
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 3px;
+    padding: 18px 22px;
+    margin: 24px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .eyebrow { color: var(--accent); }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+    font-size: .88rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 0 18px 64px; font-size: 16px; }
+    .mast { padding-top: 48px; }
+    .timeline li { grid-template-columns: 60px 1fr; gap: 12px; padding-left: 18px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <p class="kicker">Personal meal plan · Week one</p>
+    <h1>The Sunday Kitchen</h1>
+    <p class="standfirst">One shopping trip, one two-hour Sunday, and seven days of food that tastes like four different cuisines — with almonds, soy, and melon kept completely out of the building.</p>
+    <ul class="chips">
+      <li><b>Goal</b> · sustainable weight loss</li>
+      <li><b>Style</b> · batch-cook Sunday</li>
+      <li><b>Avoid</b> · almonds, soy, melon</li>
+      <li><b>Budget</b> · $60–100/wk</li>
+      <li><b>Kitchen</b> · work from home</li>
+      <li><b>Flavors</b> · Mediterranean, Tex-Mex, Asian, comfort</li>
+    </ul>
+  </header>
+
+  <!-- ================= ALLERGIES ================= -->
+  <section id="allergies">
+    <div class="allergy col">
+      <p class="eyebrow">Read this before you shop</p>
+      <h2>Your three hard stops</h2>
+      <p style="margin-top:12px;color:var(--ink-soft)">Nothing in this plan contains almonds, soy, or melon. But two of the three hide in places you would never think to check, so here is where they live.</p>
+
+      <div class="allergen">
+        <span class="allergen-name">Soy — the difficult one</span>
+        <p>Obvious: soy sauce, tamari, teriyaki, hoisin, miso, tofu, edamame, veggie burgers.</p>
+        <p><strong>Hidden:</strong> anything labeled just "vegetable oil" (it is usually soybean), nearly all commercial mayo and bottled salad dressing, most chocolate (soy lecithin), many sandwich breads (soy flour), lots of boxed broth and bouillon, Worcestershire sauce, margarine, and canned tuna packed in "vegetable broth."</p>
+        <p><strong>Your replacements:</strong> coconut aminos instead of soy sauce; olive or avocado oil for everything; avocado-oil mayo; dressing you shake yourself from oil, lemon, and Dijon.</p>
+      </div>
+
+      <div class="allergen">
+        <span class="allergen-name">Almonds</span>
+        <p>Obvious: almond milk, almond flour, marzipan, almond butter.</p>
+        <p><strong>Hidden:</strong> most granola and "healthy" baked goods, many energy bars, and a surprising amount of pesto — plenty of brands use almonds rather than pine nuts.</p>
+        <p><strong>A judgment call I made for you:</strong> many people allergic to one tree nut are told to avoid all of them, and I do not know whether that applies to you. So this plan uses <strong>pumpkin and sunflower seeds</strong> wherever a recipe would normally want nuts. If your allergist has cleared other nuts, walnuts and pecans slot straight back in.</p>
+      </div>
+
+      <div class="allergen">
+        <span class="allergen-name">Melon</span>
+        <p>Watermelon, cantaloupe, honeydew, galia.</p>
+        <p><strong>Hidden:</strong> pre-cut fruit trays and fruit salads almost always include it, as do some smoothie blends and aguas frescas. Buy whole fruit and cut it yourself.</p>
+      </div>
+
+      <p style="margin:24px 0 0;font-size:.93rem;color:var(--muted)"><strong>Always read the label anyway.</strong> Manufacturers reformulate, and I can't verify what's on the shelf in your store. If any of these allergies is severe, look for the "may contain" line too — and this plan is general food guidance, not medical advice.</p>
+    </div>
+  </section>
+
+  <!-- ================= FRAMEWORK ================= -->
+  <section id="framework">
+    <p class="eyebrow">The numbers</p>
+    <h2>What "sustainable" actually means here</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">I don't know your height, weight, or activity level, so I built the week around a moderate target that works for most adults. Start here, then adjust from what the scale actually does.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="val">1,600</span><span class="lbl">kcal/day target</span></div>
+      <div class="stat"><span class="val">110g</span><span class="lbl">protein/day</span></div>
+      <div class="stat"><span class="val">30g</span><span class="lbl">fiber/day</span></div>
+      <div class="stat"><span class="val">0.5–1</span><span class="lbl">lb lost per week</span></div>
+    </div>
+
+    <div class="col">
+      <p><strong>How to adjust.</strong> Eat this way for three weeks without changing anything. If you have lost half a pound to a pound a week, you are done tuning. If the scale hasn't moved at all, take about 150 calories out — one snack, or half the rice at lunch. If you are losing faster than two pounds a week or feel exhausted, eat more; that pace isn't sustainable and it costs you muscle.</p>
+      <p><strong>Why protein is the whole trick.</strong> Every meal below is built to land 30–40g of protein, because that is what makes a calorie deficit tolerable. High-protein meals keep you full for hours; the same calories as toast and fruit leave you hunting the kitchen at 3pm. This is the single reason this plan will work better than eating less of what you eat now.</p>
+      <p><strong>The plate, when you're improvising.</strong> Half the plate non-starchy vegetables. A palm of protein. A cupped handful of rice, pasta, or potato. A thumb of fat — oil, feta, avocado. You can build any meal on earth this way and land in roughly the right place without weighing anything.</p>
+
+      <div class="callout">
+        <p class="eyebrow">Keep the coffee</p>
+        <p>Coffee is free. What isn't free is the 300-calorie coffee <em>drink</em> — that alone can erase the whole deficit and it's the most common reason a good plan quietly stops working. Black, or with a splash of milk, and you never have to think about it again.</p>
+      </div>
+
+      <p><em class="note">If you have a medical condition, take medication that interacts with diet, or are pregnant, run this past your doctor or a registered dietitian before starting.</em></p>
+    </div>
+  </section>
+
+  <!-- ================= WEEK ================= -->
+  <section id="week">
+    <p class="eyebrow">Week at a glance</p>
+    <h2>Seven days, assembled not cooked</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">Sunday does the work. Every weekday lunch is a ten-minute assembly job at your own counter, and no dinner needs more than fifteen minutes of standing at the stove.</p>
+    </div>
+
+    <div class="scroller">
+      <table class="week-table">
+        <thead>
+          <tr><th>Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th><th>Snack</th></tr>
+        </thead>
+        <tbody>
+          <tr class="prep-day">
+            <td class="day">Sun<br><span class="kcal">prep day</span></td>
+            <td>Greek yogurt bowl, berries, pumpkin seeds<span class="kcal">330 · 25p</span></td>
+            <td>Whatever's left, or eggs on toast<span class="kcal">~400</span></td>
+            <td>Sheet-pan chicken &amp; vegetables, straight from the prep tray<span class="kcal">490 · 42p</span></td>
+            <td>Apple + sunflower seed butter<span class="kcal">200</span></td>
+          </tr>
+          <tr>
+            <td class="day">Mon</td>
+            <td>Overnight oats, berries<span class="kcal">380 · 22p</span></td>
+            <td>Greek chicken bowl<span class="kcal">520 · 42p</span></td>
+            <td>Ginger shrimp stir-fry, rice<span class="kcal">480 · 38p</span></td>
+            <td>Cottage cheese + berries<span class="kcal">180</span></td>
+          </tr>
+          <tr>
+            <td class="day">Tue</td>
+            <td>Veggie scramble, 2 eggs<span class="kcal">380 · 24p</span></td>
+            <td>Tex-Mex chicken bowl<span class="kcal">540 · 40p</span></td>
+            <td>Turkey chili, yogurt, scallion<span class="kcal">450 · 35p</span></td>
+            <td>Hummus + cucumber, pepper<span class="kcal">180</span></td>
+          </tr>
+          <tr>
+            <td class="day">Wed</td>
+            <td>Overnight oats, banana<span class="kcal">390 · 22p</span></td>
+            <td>Turkey chili + cabbage slaw<span class="kcal">450 · 35p</span></td>
+            <td>Sheet-pan salmon, broccoli, lemon<span class="kcal">500 · 40p</span></td>
+            <td>Greek yogurt, honey<span class="kcal">170</span></td>
+          </tr>
+          <tr>
+            <td class="day">Thu</td>
+            <td>Veggie scramble, 2 eggs<span class="kcal">380 · 24p</span></td>
+            <td>Chopped Mediterranean salad, chickpeas<span class="kcal">480 · 38p</span></td>
+            <td>Chicken street tacos, slaw<span class="kcal">520 · 38p</span></td>
+            <td>Apple + sunflower seed butter<span class="kcal">200</span></td>
+          </tr>
+          <tr>
+            <td class="day">Fri</td>
+            <td>Overnight oats, berries<span class="kcal">380 · 22p</span></td>
+            <td>Ginger fried rice with egg<span class="kcal">470 · 24p</span></td>
+            <td>Garlic-tomato pasta, turkey meatballs<span class="kcal">580 · 38p</span></td>
+            <td>Popcorn or 1 oz dark chocolate<span class="kcal">160</span></td>
+          </tr>
+          <tr>
+            <td class="day">Sat</td>
+            <td>Greek yogurt bowl<span class="kcal">330 · 25p</span></td>
+            <td>Tuna &amp; white bean salad<span class="kcal">420 · 35p</span></td>
+            <td>Flex night — takeout or eggs on toast<span class="kcal">~600</span></td>
+            <td>Your call<span class="kcal">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col">
+      <p style="margin-top:22px"><em class="note">Numbers are estimates for planning, not precision — "42p" means about 42g of protein. Days land between roughly 1,500 and 1,750 calories.</em></p>
+      <p><strong>Saturday dinner is deliberately unplanned.</strong> A plan with no exit valve is a plan you abandon in week two. One genuinely free meal a week costs you almost nothing across seven days and is the difference between a diet and a way of eating.</p>
+    </div>
+  </section>
+
+  <!-- ================= SUNDAY PREP ================= -->
+  <section id="prep">
+    <p class="eyebrow">Sunday · about 1 hour 50 minutes</p>
+    <h2>The one session that carries the week</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">This is a real sequence — the oven and the stove overlap on purpose, so the clock times matter. Follow them in order and you'll finish with eleven containers and almost nothing left to do until next Sunday.</p>
+    </div>
+
+    <div class="col">
+      <ol class="timeline">
+        <li><span class="t">0:00</span><span class="what"><b>Oven to 425°F. Rice on.</b><span>Line two sheet pans. Start 2 cups dry rice in a pot (or rice cooker) — it'll be done and cooling before you need the counter.</span></span></li>
+        <li><span class="t">0:05</span><span class="what"><b>Season the chicken two ways</b><span>Split 2½ lb boneless skinless thighs into two bowls. <strong>Bowl A (Greek):</strong> olive oil, juice of a lemon, 3 grated garlic cloves, 1 tbsp oregano, salt, pepper. <strong>Bowl B (Tex-Mex):</strong> olive oil, 2 tsp cumin, 2 tsp chili powder, 1 tsp smoked paprika, lime juice, salt. Spread both on sheet pan 1, keeping the halves apart.</span></span></li>
+        <li><span class="t">0:12</span><span class="what"><b>Chop the vegetable tray</b><span>Two broccoli crowns, 2 bell peppers, 1 red onion, 1 zucchini — all in rough same-size chunks. Toss on sheet pan 2 with olive oil and salt.</span></span></li>
+        <li><span class="t">0:20</span><span class="what"><b>Both pans in</b><span>Chicken 22–25 min (165°F internal), vegetables 20–25 min until the edges char. Set a timer and walk away.</span></span></li>
+        <li><span class="t">0:22</span><span class="what"><b>Start the chili on the stove</b><span>Brown 1 lb ground turkey with a diced onion and 3 cloves garlic. Add 1 tbsp cumin, 1 tbsp chili powder, 2 tsp smoked paprika, then a 28 oz can crushed tomatoes, a drained can each of black and kidney beans, and 1½ cups broth. Simmer, lid off, while you do everything else.</span></span></li>
+        <li><span class="t">0:35</span><span class="what"><b>Eggs</b><span>Eight eggs into a steamer basket or straight into an inch of boiling water, 12 minutes, then ice water. Peel them now — nobody ever peels them later.</span></span></li>
+        <li><span class="t">0:45</span><span class="what"><b>Pans out. Spread the rice.</b><span>Rest the chicken. Tip the cooked rice onto a clean sheet pan in a thin layer to cool — it stops the grains clumping into a brick, and it's the actual secret to Friday's fried rice.</span></span></li>
+        <li><span class="t">0:50</span><span class="what"><b>Two sauces, five minutes</b><span><strong>Garlic-lemon yogurt:</strong> 1 cup Greek yogurt, 1 grated garlic clove, juice of half a lemon, salt, water to loosen. <strong>Ginger-scallion:</strong> 3 tbsp coconut aminos, 1 tbsp rice vinegar, 1 tbsp grated ginger, 2 sliced scallions, 1 tsp honey, 1 tsp toasted sesame oil (check that label — cheap blends are cut with soybean oil).</span></span></li>
+        <li><span class="t">1:05</span><span class="what"><b>Three jars of overnight oats</b><span>Per jar: ½ cup rolled oats, ½ cup milk, ¼ cup Greek yogurt, 1 tbsp chia, pinch of salt. Lid on, fridge. Fruit goes on in the morning, not now.</span></span></li>
+        <li><span class="t">1:15</span><span class="what"><b>Slice and portion the chicken</b><span>Greek half and Tex-Mex half into separate containers. Vegetables into a third. Keep sauces in their own small jars — never poured over anything yet.</span></span></li>
+        <li><span class="t">1:25</span><span class="what"><b>Chili off the heat</b><span>Cool it uncovered for twenty minutes, then portion: three into the fridge, two straight into the freezer. Do the freezing today, not Thursday.</span></span></li>
+        <li><span class="t">1:40</span><span class="what"><b>The produce ten minutes</b><span>Wash and dry the greens (dry matters — wet greens rot). Chop cucumber and tomatoes for the week. Shred half a cabbage for slaw. All into separate containers.</span></span></li>
+        <li><span class="t">1:50</span><span class="what"><b>Done</b><span>Wipe down, and don't cook again until Monday evening.</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= RECIPES ================= -->
+  <section id="recipes">
+    <p class="eyebrow">The recipes</p>
+    <h2>Assembly jobs and fifteen-minute dinners</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">Everything below assumes Sunday is done. The lunches involve no cooking at all; the dinners are one pan each.</p>
+    </div>
+
+    <h3 style="margin-top:34px">Lunches — no cooking, ten minutes standing up</h3>
+    <div class="recipes">
+
+      <div class="recipe">
+        <h3>Greek chicken bowl</h3>
+        <p class="meta"><b>5 min</b> · no cook · 520 kcal · 42g protein</p>
+        <h4>Build</h4>
+        <ul>
+          <li>¾ cup cooked rice</li>
+          <li>5 oz sliced Greek chicken</li>
+          <li>Big handful roasted vegetables</li>
+          <li>½ cucumber diced, handful cherry tomatoes</li>
+          <li>2 tbsp crumbled feta</li>
+          <li>3 tbsp garlic-lemon yogurt sauce</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Rice and chicken into the bowl, microwave 90 seconds with a splash of water and a plate on top.</li>
+          <li>Add the cold stuff — cucumber, tomato, feta — on top of the warm. The contrast is the whole point.</li>
+          <li>Spoon the yogurt sauce over at the last second, never before.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Tex-Mex chicken bowl</h3>
+        <p class="meta"><b>5 min</b> · no cook · 540 kcal · 40g protein</p>
+        <h4>Build</h4>
+        <ul>
+          <li>¾ cup cooked rice, squeeze of lime, chopped cilantro</li>
+          <li>5 oz sliced Tex-Mex chicken</li>
+          <li>½ cup black beans, rinsed</li>
+          <li>3 tbsp salsa</li>
+          <li>¼ avocado, sliced</li>
+          <li>Shredded cabbage for crunch</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Warm rice, chicken, and beans together for 2 minutes.</li>
+          <li>Fork the lime and cilantro through the hot rice — it only takes the flavor while warm.</li>
+          <li>Top with salsa, avocado, cabbage.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Chopped Mediterranean salad</h3>
+        <p class="meta"><b>8 min</b> · no cook · 480 kcal · 38g protein</p>
+        <h4>Build</h4>
+        <ul>
+          <li>3 big handfuls romaine, chopped small</li>
+          <li>5 oz Greek chicken, diced</li>
+          <li>½ cup chickpeas, drained</li>
+          <li>Cucumber, tomato, red onion</li>
+          <li>2 tbsp feta, 1 hard-boiled egg</li>
+          <li>Dressing: 1 tbsp olive oil, juice of ½ lemon, ½ tsp Dijon, salt</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Chop everything to roughly the size of a chickpea. A chopped salad you can eat with a spoon beats a bowl of whole leaves every time.</li>
+          <li>Shake the dressing in a jar, pour, toss hard.</li>
+          <li>Egg quartered on top.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Ginger fried rice with egg</h3>
+        <p class="meta"><b>10 min</b> · one pan · 470 kcal · 24g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>1 cup cold cooked rice (day-old is better)</li>
+          <li>2 eggs, beaten</li>
+          <li>Handful roasted vegetables, chopped</li>
+          <li>1 tsp grated ginger, 1 clove garlic</li>
+          <li>2 tbsp coconut aminos</li>
+          <li>1 scallion, 1 tsp toasted sesame oil</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Hot pan, splash of oil. Scramble the eggs 30 seconds until barely set, tip onto a plate.</li>
+          <li>Ginger and garlic in for 20 seconds, then the cold rice. Press it flat and leave it alone for a full minute to crisp.</li>
+          <li>Vegetables and coconut aminos in, toss, return the egg, kill the heat.</li>
+          <li>Scallion and sesame oil off the heat.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Tuna &amp; white bean salad</h3>
+        <p class="meta"><b>5 min</b> · no cook · 420 kcal · 35g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>1 can tuna in water or olive oil, drained <em class="note">(check the label — "vegetable broth" often means soy)</em></li>
+          <li>½ can cannellini beans, rinsed</li>
+          <li>Cherry tomatoes, red onion, parsley</li>
+          <li>1 tbsp olive oil, lemon juice, salt, pepper</li>
+          <li>Bed of greens, or one slice of good toast</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Flake the tuna into a bowl, keeping some chunks.</li>
+          <li>Everything else in, toss gently so the beans stay whole.</li>
+          <li>Let it sit five minutes before eating — the onion softens and the beans take on the lemon.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Overnight oats</h3>
+        <p class="meta"><b>3 min</b> · make 3 Sunday · 380 kcal · 22g protein</p>
+        <h4>Per jar</h4>
+        <ul>
+          <li>½ cup rolled oats</li>
+          <li>½ cup milk or oat milk <em class="note">(not almond)</em></li>
+          <li>¼ cup Greek yogurt</li>
+          <li>1 tbsp chia seeds, pinch of salt</li>
+          <li>Morning: berries or sliced banana, 1 tbsp pumpkin seeds</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Everything but the fruit into a jar, stir hard, lid, fridge.</li>
+          <li>Good for four days. Fruit goes on in the morning — added Sunday it turns the whole jar to mush.</li>
+          <li>The yogurt is what takes this from 12g protein to 22g. Don't skip it.</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 style="margin-top:44px">Dinners — one pan, fifteen minutes on your feet</h3>
+    <div class="recipes">
+
+      <div class="recipe">
+        <h3>Ginger shrimp stir-fry</h3>
+        <p class="meta"><b>12 min</b> · one pan · 480 kcal · 38g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>6 oz frozen shrimp, thawed under cold water and patted very dry</li>
+          <li>2 cups vegetables — bell pepper, broccoli, cabbage, whatever's left</li>
+          <li>1 tbsp avocado oil</li>
+          <li>3 tbsp ginger-scallion sauce from Sunday</li>
+          <li>¾ cup cooked rice</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Dry shrimp is non-negotiable — wet shrimp steams grey instead of searing.</li>
+          <li>Screaming hot pan, oil, shrimp in a single layer. 90 seconds a side, then out onto a plate.</li>
+          <li>Vegetables into the same pan, 3–4 minutes, still with some bite.</li>
+          <li>Shrimp back in, sauce over, toss 30 seconds. Over rice.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Sheet-pan salmon &amp; broccoli</h3>
+        <p class="meta"><b>15 min</b> · 2 min active · 500 kcal · 40g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>6 oz salmon fillet</li>
+          <li>1 broccoli crown, in florets</li>
+          <li>Olive oil, salt, pepper</li>
+          <li>½ lemon, garlic powder</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Oven 425°F. Broccoli on the pan with oil and salt, in for 8 minutes alone.</li>
+          <li>Push it aside, salmon on the same pan, oil, salt, garlic powder. Back in for 9–11 minutes.</li>
+          <li>Done when a fork twists the thickest part apart easily. Lemon over the top at the table.</li>
+          <li>One pan, no chopping board, ninety seconds of washing up.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Chicken street tacos</h3>
+        <p class="meta"><b>8 min</b> · 520 kcal · 38g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>5 oz Tex-Mex chicken from Sunday, chopped</li>
+          <li>3 corn tortillas</li>
+          <li>Shredded cabbage, lime, cilantro, red onion</li>
+          <li>Salsa; ¼ avocado</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Char the tortillas directly over a gas flame or in a dry pan, 20 seconds a side. This step is the difference between a taco and a wrap.</li>
+          <li>Warm the chicken in the same pan.</li>
+          <li>Build: chicken, then cabbage, salsa, avocado, cilantro, hard squeeze of lime.</li>
+          <li>Three small corn tortillas run about 150 calories total, against 300 for one big flour wrap.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Garlic-tomato pasta, turkey meatballs</h3>
+        <p class="meta"><b>15 min</b> · 580 kcal · 38g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>2 oz dry pasta (chickpea pasta adds ~8g protein)</li>
+          <li>5 oz ground turkey, rolled into 8 small balls with salt, pepper, oregano</li>
+          <li>3 cloves garlic, sliced thin</li>
+          <li>1 cup crushed tomatoes</li>
+          <li>2 big handfuls baby spinach</li>
+          <li>Olive oil, grated parmesan</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Pasta water on first. Everything else times off it.</li>
+          <li>Meatballs in an oiled pan, brown all over, 6 minutes. Out.</li>
+          <li>Garlic in the same pan on low until it smells sweet — 60 seconds, don't brown it. Tomatoes in, simmer.</li>
+          <li>Meatballs back, spinach on top, lid for 2 minutes to wilt.</li>
+          <li>Drained pasta into the sauce, not sauce onto pasta. Splash of pasta water, parmesan, toss.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Turkey chili</h3>
+        <p class="meta"><b>Sunday batch</b> · 5 servings · 450 kcal · 35g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>1 lb 93% ground turkey</li>
+          <li>1 onion diced, 3 cloves garlic</li>
+          <li>1 tbsp cumin, 1 tbsp chili powder, 2 tsp smoked paprika</li>
+          <li>28 oz crushed tomatoes</li>
+          <li>1 can black beans, 1 can kidney beans, both rinsed</li>
+          <li>1½ cups broth <em class="note">(check the label for soy)</em></li>
+          <li>Serve with: Greek yogurt, scallion, lime</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Brown the turkey hard — leave it undisturbed until it sticks, then scrape. Colour is flavour.</li>
+          <li>Onion and garlic in, 4 minutes. Spices in for 30 seconds until fragrant, which wakes them up.</li>
+          <li>Tomatoes, beans, broth. Simmer uncovered 25 minutes while you finish the rest of prep.</li>
+          <li>Greek yogurt instead of sour cream on top: twice the protein, a third of the fat, and honestly nobody notices.</li>
+          <li>Freeze two portions the day you make it.</li>
+        </ol>
+      </div>
+
+      <div class="recipe">
+        <h3>Veggie scramble</h3>
+        <p class="meta"><b>6 min</b> · one pan · 380 kcal · 24g protein</p>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>2 eggs, beaten with a pinch of salt</li>
+          <li>Handful roasted vegetables from Sunday</li>
+          <li>1 tsp olive oil or butter</li>
+          <li>1 slice toast <em class="note">(check the bread for soy flour)</em>, or ½ avocado</li>
+        </ul>
+        <h4>Method</h4>
+        <ol>
+          <li>Warm the vegetables in the pan first, then pour the eggs over.</li>
+          <li>Low heat, and pull the eggs in from the edges with a spatula every few seconds.</li>
+          <li>Off the heat while they still look slightly underdone — they carry on cooking in the pan.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GROCERY ================= -->
+  <section id="grocery">
+    <p class="eyebrow">One trip · about $88 in week one</p>
+    <h2>The list</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">Prices are rough US supermarket estimates and will vary. Items marked <span class="pantry-flag">PANTRY</span> are one-time buys that last months — strip those out and your ongoing weeks land near <strong>$72</strong>, comfortably inside your range.</p>
+    </div>
+
+    <div class="grocery">
+      <div class="aisle">
+        <h4>Produce <span class="sum">$47</span></h4>
+        <ul>
+          <li><label><input type="checkbox"><span class="item">Broccoli, 2 crowns</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Bell peppers &times;3</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Yellow onions &times;2, red onion &times;1</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Zucchini &times;1</span><span class="price">1.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Green cabbage, 1 small head</span><span class="price">2.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Romaine or spring mix, 1 tub</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Cucumbers &times;2</span><span class="price">2.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Roma tomatoes &times;4</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Cherry tomatoes, 1 pint</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Avocados &times;2</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Lemons &times;3, limes &times;3</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Garlic, 1 head · ginger, 1 knob</span><span class="price">2.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Scallions &amp; cilantro, 1 bunch each</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Baby spinach, 1 bag</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Parsley, small bunch</span><span class="price">1.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Apples &times;4, bananas</span><span class="price">5.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Berries, fresh or frozen</span><span class="price">5.00</span></label></li>
+        </ul>
+      </div>
+
+      <div class="aisle">
+        <h4>Protein <span class="sum">$44</span></h4>
+        <ul>
+          <li><label><input type="checkbox"><span class="item">Chicken thighs, boneless skinless, 2½ lb</span><span class="price">8.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Ground turkey 93%, 1½ lb</span><span class="price">8.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Frozen shrimp, 1 lb bag</span><span class="price">9.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Salmon fillets &times;2</span><span class="price">12.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Eggs, 18 count</span><span class="price">5.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Canned tuna &times;1 — <em>water or olive oil only</em></span><span class="price">2.00</span></label></li>
+        </ul>
+        <p style="font-size:.85rem;color:var(--muted);margin:14px 0 0">Tight week? Drop the salmon and cook chicken breast instead — saves about $8.</p>
+      </div>
+
+      <div class="aisle">
+        <h4>Dairy <span class="sum">$23</span></h4>
+        <ul>
+          <li><label><input type="checkbox"><span class="item">Greek yogurt, plain, 32 oz</span><span class="price">6.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Cottage cheese, 16 oz</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Feta, 6 oz block in brine</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Parmesan, small wedge</span><span class="price">5.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Milk or oat milk — <em>not almond</em></span><span class="price">4.00</span></label></li>
+        </ul>
+      </div>
+
+      <div class="aisle">
+        <h4>Pantry &amp; canned <span class="sum">$31</span></h4>
+        <ul>
+          <li><label><input type="checkbox"><span class="item">Jasmine rice, 2 lb</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Rolled oats, 18 oz</span><span class="price">4.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Pasta or chickpea pasta</span><span class="price">2.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Corn tortillas, 1 pack</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Black beans &times;2, kidney &times;1, chickpeas &times;1, cannellini &times;1</span><span class="price">6.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Crushed tomatoes, 28 oz</span><span class="price">2.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Chicken broth — <em>check for soy</em></span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Salsa, 1 jar</span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Hummus, 1 tub</span><span class="price">4.00</span></label></li>
+        </ul>
+      </div>
+
+      <div class="aisle">
+        <h4>One-time buys <span class="sum">$32</span></h4>
+        <ul>
+          <li><label><input type="checkbox"><span class="item">Coconut aminos <span class="pantry-flag">PANTRY</span></span><span class="price">5.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Rice vinegar <span class="pantry-flag">PANTRY</span></span><span class="price">3.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Toasted sesame oil — <em>pure, not blended</em> <span class="pantry-flag">PANTRY</span></span><span class="price">4.50</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Chia seeds <span class="pantry-flag">PANTRY</span></span><span class="price">5.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Pumpkin &amp; sunflower seeds <span class="pantry-flag">PANTRY</span></span><span class="price">5.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Sunflower seed butter <span class="pantry-flag">PANTRY</span></span><span class="price">6.00</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Cumin, chili powder, smoked paprika, oregano <span class="pantry-flag">PANTRY</span></span><span class="price">—</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Olive oil, avocado oil, Dijon, honey <span class="pantry-flag">PANTRY</span></span><span class="price">—</span></label></li>
+          <li><label><input type="checkbox"><span class="item">Dark chocolate, 85% — <em>soy-free label</em></span><span class="price">3.00</span></label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SWAPS ================= -->
+  <section id="swaps">
+    <p class="eyebrow">Swaps</p>
+    <h2>Trades that cost you nothing</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">Some of these are for the allergies, some are for the deficit. All of them are things you stop noticing after a week.</p>
+    </div>
+
+    <div class="scroller">
+      <table class="swap-table">
+        <thead><tr><th>Instead of</th><th>Use</th><th>What it buys you</th></tr></thead>
+        <tbody>
+          <tr><td>Soy sauce, tamari, teriyaki</td><td>Coconut aminos</td><td>Soy-free, and about a third less sodium</td></tr>
+          <tr><td>Almond milk</td><td>Oat or dairy milk</td><td>Allergen out; dairy adds 8g protein a cup</td></tr>
+          <tr><td>Sour cream</td><td>Plain Greek yogurt</td><td>Twice the protein, a third of the fat</td></tr>
+          <tr><td>Mayo and bottled dressing</td><td>Olive oil, lemon, Dijon in a jar</td><td>Dodges soybean oil entirely; 30 seconds to make</td></tr>
+          <tr><td>"Vegetable oil"</td><td>Olive or avocado oil</td><td>Vegetable oil is usually soybean oil</td></tr>
+          <tr><td>A full portion of rice</td><td>Half rice, half riced cauliflower</td><td>Same volume in the bowl, roughly half the carbs</td></tr>
+          <tr><td>Large flour tortilla</td><td>Three small corn tortillas</td><td>~150 fewer calories, and corn is usually soy-free</td></tr>
+          <tr><td>Tortilla chips</td><td>Corn tortillas cut into wedges and baked</td><td>Same crunch, a fraction of the oil</td></tr>
+          <tr><td>Store granola</td><td>Oats, pumpkin seeds, cinnamon</td><td>Skips both the almonds and the added sugar</td></tr>
+          <tr><td>80/20 ground beef</td><td>93% turkey or 93% beef</td><td>~120 fewer calories per serving, same chili</td></tr>
+          <tr><td>Croutons</td><td>Toasted pumpkin seeds</td><td>Crunch plus protein instead of crunch plus bread</td></tr>
+          <tr><td>Milk chocolate</td><td>85% dark, soy-free label</td><td>Most milk chocolate carries soy lecithin</td></tr>
+          <tr><td>Juice and soda</td><td>Sparkling water with lime</td><td>The easiest 150 calories you'll ever cut</td></tr>
+          <tr><td>Chicken breast for meal prep</td><td>Chicken thighs</td><td>Doesn't turn to rubber when reheated on day four</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= TIPS ================= -->
+  <section id="tips">
+    <p class="eyebrow">Meal prep</p>
+    <h2>Things that took me a while to learn</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <h4>Keeping the food good</h4>
+      <ul>
+        <li><strong>Season one protein two ways.</strong> Half Greek, half Tex-Mex on the same tray is the single best defence against day-four boredom, and it costs you one extra bowl.</li>
+        <li><strong>Sauces live in their own jars.</strong> Grains and protein keep for five days; anything dressed keeps for one. Everything wet goes on at the moment of eating.</li>
+        <li><strong>Cool the rice on a sheet pan.</strong> Hot rice in a sealed container steams itself into paste. Spread thin, cool ten minutes, then box it.</li>
+        <li><strong>Reheat rice with a splash of water and a lid.</strong> It comes back genuinely fresh instead of dry.</li>
+        <li><strong>Never prep avocado, dressed greens, or anything fried.</strong> They don't survive, and one slimy container is enough to make you quit the whole system.</li>
+        <li><strong>Dry your greens properly.</strong> Water on leaves is what turns a tub of lettuce to slime by Wednesday.</li>
+      </ul>
+
+      <h4>Keeping the habit</h4>
+      <ul>
+        <li><strong>Freeze on day one, not day four.</strong> Two chili portions into the freezer on Sunday means two nights off later in the month, and nothing thrown away.</li>
+        <li><strong>Buy eleven matching containers that stack.</strong> Five lunches, three dinners, three breakfasts. Mismatched lids are a genuinely common reason people stop prepping.</li>
+        <li><strong>Your Sunday should get faster.</strong> If it's still two hours in week three, cut a component — drop the sauces or buy pre-cut vegetables. A ninety-minute habit you keep beats a two-hour one you abandon.</li>
+        <li><strong>Marinate next week's chicken while you're at it.</strong> Raw thighs in a bag with oil and spices, straight into the freezer. Next Sunday starts fifteen minutes ahead.</li>
+        <li><strong>One missed day is not a failed week.</strong> Eat the takeout, and pick the plan back up at the next meal rather than the next Monday.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= WEEK 2 ================= -->
+  <section id="rotate">
+    <p class="eyebrow">Week two and beyond</p>
+    <h2>Keep the skeleton, change the seasoning</h2>
+    <div class="rule"></div>
+    <div class="col">
+      <p class="lede">Don't rebuild the plan. The structure — two-way protein, roasted vegetable tray, cooked grain, one pot of something, two sauces — is what makes the week work. Swap what goes into each slot and it stays interesting for months.</p>
+      <ul>
+        <li><strong>Protein:</strong> pork tenderloin, chicken breast, white fish, or a whole roast chicken instead of the thighs.</li>
+        <li><strong>Seasonings:</strong> swap Greek for za'atar or harissa; swap Tex-Mex for chipotle-lime or a jerk rub.</li>
+        <li><strong>Grain:</strong> quinoa, farro, or roasted potatoes instead of rice.</li>
+        <li><strong>The pot:</strong> white chicken chili, lentil soup, or a chunky minestrone in place of turkey chili.</li>
+        <li><strong>Sauces:</strong> keep the yogurt base and change what's in it — dill and cucumber one week, chipotle and lime the next.</li>
+        <li><strong>Vegetables:</strong> whatever is cheap that week. The tray doesn't care.</li>
+      </ul>
+      <p>Cook one new recipe a week if you feel like it, and let the good ones join the rotation. That's how this stops being a meal plan and turns into how you cook.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built around a moderate calorie deficit and no almonds, soy, or melon. Calorie and protein figures are planning estimates, not measurements, and prices are rough US supermarket averages. Always check labels yourself — formulations change. This is general food guidance, not medical or dietetic advice.</p>
+  </footer>
+
+</div>
