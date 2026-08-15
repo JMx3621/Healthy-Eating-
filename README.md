@@ -1,6 +1,6 @@
 # The Sunday Kitchen
 
-A one-week personalized meal plan: one shopping trip, one two-hour Sunday, and seven days of food — with **almonds, soy, and melon** kept completely out of the building.
+A one-week personalized meal plan: one shopping trip, one two-hour Sunday, and seven days of food — no almonds, no melon, and every gram of protein from actual food rather than a shake.
 
 > **Styled version:** open [`meal-plan.html`](meal-plan.html) in a browser for the printable, checkbox-enabled version of this plan.
 
@@ -10,24 +10,17 @@ A one-week personalized meal plan: one shopping trip, one two-hour Sunday, and s
 |---|---|
 | Goal | Sustainable weight loss |
 | Cooking style | Batch-cook on Sunday, minimal weeknight work |
-| Allergies | Almonds, soy, melon (hard avoid) |
+| Avoid | Almonds, melon, concentrated whey (shakes/powders) |
+| Soy | Fine — soy sauce, miso and edamame used throughout. No tofu. |
 | Budget | $60–100/week, one person |
 | Schedule | Work from home |
 | Flavors | Mediterranean, Tex-Mex, Asian-inspired, comfort classics |
 
 ---
 
-## 1. Your three hard stops
+## 1. What's actually out
 
-Nothing in this plan contains almonds, soy, or melon. But two of the three hide in places you'd never think to check.
-
-### Soy — the difficult one
-
-**Obvious:** soy sauce, tamari, teriyaki, hoisin, miso, tofu, edamame, veggie burgers.
-
-**Hidden:** anything labeled just "vegetable oil" (usually soybean), nearly all commercial mayo and bottled salad dressing, most chocolate (soy lecithin), many sandwich breads (soy flour), lots of boxed broth and bouillon, Worcestershire sauce, margarine, canned tuna packed in "vegetable broth."
-
-**Replacements:** coconut aminos instead of soy sauce; olive or avocado oil for everything; avocado-oil mayo; dressing shaken from oil, lemon, and Dijon.
+Two hard stops, one thing to watch, and one ingredient that's very much back in.
 
 ### Almonds
 
@@ -43,7 +36,21 @@ Watermelon, cantaloupe, honeydew, galia.
 
 **Hidden:** pre-cut fruit trays and fruit salads almost always include it, as do some smoothie blends and aguas frescas. Buy whole fruit and cut it yourself.
 
-> **Always read the label anyway.** Manufacturers reformulate. If any of these allergies is severe, check the "may contain" line too. This plan is general food guidance, not medical advice.
+### Concentrated whey — the shake problem
+
+Bolthouse drinks are built on **whey protein concentrate**. One bottle carries more whey than a whole day of ordinary eating, on top of gums, carrageenan and a lot of sugar. That's a very different thing from the trace of whey in a spoonful of yogurt.
+
+Since regular food doesn't bother you, the **yogurt, cottage cheese and cheese stay in the plan** — they do a lot of the work getting you to 110g of protein a day. What's out is anything that concentrates whey into a single serving.
+
+**Skip:** protein shakes and bottled smoothies, whey protein powder, most protein bars (look for "whey protein isolate/concentrate" high in the list), and "high protein" yogurts and ice creams that add whey back in.
+
+**Worth knowing:** the culprit may not even be the whey — those drinks have a lot else going on. If the reaction is ever more than mild discomfort, mention it to a doctor, because a whey protein allergy and lactose intolerance are managed quite differently.
+
+### Soy — cleared, and used
+
+Soy sauce, miso and edamame are all through this plan now. Miso turns Wednesday's salmon into something worth looking forward to, and a bag of frozen edamame is the cheapest high-protein snack in the store — a cup of pods is about 120 calories with 11g protein and 8g fiber. No tofu anywhere, as requested.
+
+> **Read labels anyway.** Manufacturers reformulate. This plan is general food guidance, not medical advice.
 
 ---
 
@@ -62,6 +69,8 @@ Height, weight, and activity level are unknown, so this is built around a modera
 
 **Why protein is the whole trick.** Every meal below lands 30–40g of protein, because that's what makes a deficit tolerable. The same calories as toast and fruit leave you hunting the kitchen at 3pm.
 
+**Why there's no shake here.** Every weight-loss plan on earth wants to hand you a protein shake, and that's exactly the thing that makes you feel bad. You don't need one. Eggs, chicken thighs, Greek yogurt, cottage cheese, tuna and edamame get you past 110g a day without a scoop of powder in sight — and food keeps you full in a way liquid never does.
+
 **The plate, when improvising.** Half the plate non-starchy vegetables. A palm of protein. A cupped handful of starch. A thumb of fat. Any meal on earth, roughly right, without weighing anything.
 
 **Keep the coffee.** Coffee is free. The 300-calorie coffee *drink* is not — it alone can erase the deficit, and it's the most common reason a good plan quietly stops working.
@@ -77,12 +86,12 @@ Sunday does the work. Every weekday lunch is a ten-minute assembly job; no dinne
 | Day | Breakfast | Lunch | Dinner | Snack |
 |---|---|---|---|---|
 | **Sun** *(prep)* | Greek yogurt bowl, berries, pumpkin seeds | Leftovers, or eggs on toast | Sheet-pan chicken & vegetables, from the prep tray | Apple + sunflower seed butter |
-| **Mon** | Overnight oats, berries | Greek chicken bowl | Ginger shrimp stir-fry, rice | Cottage cheese + berries |
-| **Tue** | Veggie scramble | Tex-Mex chicken bowl | Turkey chili, yogurt, scallion | Hummus + cucumber |
-| **Wed** | Overnight oats, banana | Turkey chili + cabbage slaw | Sheet-pan salmon, broccoli, lemon | Greek yogurt, honey |
-| **Thu** | Veggie scramble | Chopped Mediterranean salad | Chicken street tacos, slaw | Apple + sunflower seed butter |
-| **Fri** | Overnight oats, berries | Ginger fried rice with egg | Garlic-tomato pasta, turkey meatballs | Popcorn or 1 oz dark chocolate |
-| **Sat** | Greek yogurt bowl | Tuna & white bean salad | **Flex night** — takeout or eggs on toast | Your call |
+| **Mon** | Overnight oats, berries | Greek chicken bowl | Ginger shrimp & edamame stir-fry, rice | Cottage cheese + berries |
+| **Tue** | Veggie scramble | Tex-Mex chicken bowl | Turkey chili, yogurt, scallion | Steamed edamame, flaky salt |
+| **Wed** | Overnight oats, banana | Turkey chili + cabbage slaw | Miso-glazed salmon, broccoli | Greek yogurt, honey |
+| **Thu** | Veggie scramble | Chopped Mediterranean salad | Chicken street tacos, slaw | Hummus + cucumber |
+| **Fri** | Overnight oats, berries | Ginger fried rice, egg & edamame | Garlic-tomato pasta, turkey meatballs | Popcorn or 1 oz dark chocolate |
+| **Sat** | Greek yogurt bowl | Tuna & chickpea salad | **Flex night** — takeout or eggs on toast | Your call |
 
 Days land between roughly 1,500 and 1,750 calories. Per-meal figures are in `meal-plan.html`.
 
@@ -98,12 +107,12 @@ This is a real sequence. The oven and stove overlap on purpose, so the clock tim
 |---|---|
 | **0:00** | Oven to 425°F, line two sheet pans, start 2 cups dry rice. |
 | **0:05** | Season 2½ lb chicken thighs in two bowls. **A (Greek):** olive oil, lemon, 3 grated garlic cloves, 1 tbsp oregano, S&P. **B (Tex-Mex):** olive oil, 2 tsp cumin, 2 tsp chili powder, 1 tsp smoked paprika, lime, salt. Spread on pan 1, halves kept apart. |
-| **0:12** | Chop the vegetable tray: 2 broccoli crowns, 2 bell peppers, 1 red onion, 1 zucchini. Pan 2, olive oil, salt. |
+| **0:12** | Chop the vegetable tray: 2 broccoli crowns, 2 bell peppers, 1 red onion. Pan 2, olive oil, salt. |
 | **0:20** | Both pans in. Chicken 22–25 min (165°F), vegetables 20–25 min until edges char. |
 | **0:22** | Start the chili (recipe below). Simmer uncovered while you do everything else. |
 | **0:35** | Eight eggs, 12 minutes, then ice water. Peel them now — nobody peels them later. |
 | **0:45** | Pans out, rest the chicken. Tip the rice onto a clean sheet pan in a thin layer to cool. This stops it clumping and is the actual secret to Friday's fried rice. |
-| **0:50** | Two sauces. **Garlic-lemon yogurt:** 1 cup Greek yogurt, 1 grated garlic clove, juice of ½ lemon, salt, water to loosen. **Ginger-scallion:** 3 tbsp coconut aminos, 1 tbsp rice vinegar, 1 tbsp grated ginger, 2 sliced scallions, 1 tsp honey, 1 tsp toasted sesame oil *(check the label — cheap blends are cut with soybean oil)*. |
+| **0:50** | Two sauces. **Garlic-lemon yogurt:** 1 cup Greek yogurt, 1 grated garlic clove, juice of ½ lemon, salt, water to loosen. **Ginger-scallion soy:** 3 tbsp soy sauce, 1 tbsp rice vinegar, 1 tbsp grated ginger, 2 sliced scallions, 1 tsp honey, 1 tsp toasted sesame oil. Both keep a week. |
 | **1:05** | Three jars of overnight oats. Per jar: ½ cup rolled oats, ½ cup milk, ¼ cup Greek yogurt, 1 tbsp chia, pinch of salt. Fruit goes on in the morning, not now. |
 | **1:15** | Slice and portion the chicken — Greek and Tex-Mex in separate containers. Vegetables in a third. Sauces in their own jars. |
 | **1:25** | Chili off the heat, cool 20 min uncovered, portion: three to the fridge, two straight to the freezer. |
@@ -117,7 +126,7 @@ This is a real sequence. The oven and stove overlap on purpose, so the clock tim
 ### Lunches — no cooking, ten minutes standing up
 
 #### Greek chicken bowl · 5 min · 520 kcal · 42g protein
-¾ cup cooked rice · 5 oz Greek chicken · roasted vegetables · ½ cucumber diced · cherry tomatoes · 2 tbsp feta · 3 tbsp garlic-lemon yogurt
+¾ cup cooked rice · 5 oz Greek chicken · roasted vegetables · ½ cucumber diced · chopped tomato · 2 tbsp feta · 3 tbsp garlic-lemon yogurt
 
 1. Rice and chicken in the bowl, microwave 90 seconds with a splash of water and a plate on top.
 2. Add the cold things — cucumber, tomato, feta — on top of the warm. The contrast is the point.
@@ -135,42 +144,45 @@ This is a real sequence. The oven and stove overlap on purpose, so the clock tim
 
 1. Chop everything to roughly chickpea size. A salad you can eat with a spoon beats whole leaves every time.
 2. Shake the dressing in a jar, pour, toss hard. Egg quartered on top.
+3. **Variation:** swap the dressing for 1 tsp white miso whisked with 1 tbsp olive oil, 1 tbsp rice vinegar and a little grated ginger. Same salad, completely different meal.
 
-#### Ginger fried rice with egg · 10 min · 470 kcal · 24g protein
-1 cup cold cooked rice · 2 eggs · roasted vegetables, chopped · 1 tsp grated ginger · 1 clove garlic · 2 tbsp coconut aminos · 1 scallion · 1 tsp toasted sesame oil
+#### Ginger fried rice, egg & edamame · 10 min · 500 kcal · 30g protein
+1 cup cold cooked rice · 2 eggs · ½ cup shelled edamame · roasted vegetables, chopped · 1 tsp grated ginger · 1 clove garlic · 2 tbsp soy sauce · 1 scallion · 1 tsp toasted sesame oil
 
 1. Hot pan, oil. Scramble the eggs 30 seconds until barely set, tip onto a plate.
 2. Ginger and garlic 20 seconds, then the cold rice. Press flat and **leave it alone for a full minute** to crisp.
-3. Vegetables and coconut aminos in, toss, return the egg, kill the heat.
-4. Scallion and sesame oil off the heat.
+3. Edamame, vegetables and soy sauce in, toss, return the egg, kill the heat.
+4. Scallion and sesame oil off the heat. The edamame takes this from 24g protein to 30g.
 
-#### Tuna & white bean salad · 5 min · 420 kcal · 35g protein
-1 can tuna in water or olive oil *(check the label — "vegetable broth" often means soy)* · ½ can cannellini · cherry tomatoes, red onion, parsley · 1 tbsp olive oil, lemon, S&P · greens or one slice of toast
+#### Tuna & chickpea salad · 5 min · 420 kcal · 35g protein
+1 can tuna in water or olive oil, drained · ½ can chickpeas, rinsed · chopped tomato, red onion, cilantro · 1 tbsp olive oil, lemon, S&P · greens or one slice of toast
 
-1. Flake the tuna, keeping some chunks. Everything else in, toss gently so the beans stay whole.
-2. Let it sit five minutes — the onion softens and the beans take on the lemon.
+1. Flake the tuna, keeping some chunks. Everything else in, toss gently so the chickpeas stay whole.
+2. Let it sit five minutes — the onion softens and the chickpeas take on the lemon.
 
 #### Overnight oats · 3 min · make 3 Sunday · 380 kcal · 22g protein
-½ cup rolled oats · ½ cup milk or oat milk *(not almond)* · ¼ cup Greek yogurt · 1 tbsp chia · pinch salt · morning: berries or banana + 1 tbsp pumpkin seeds
+½ cup rolled oats · ½ cup milk *(not almond)* · ¼ cup Greek yogurt · 1 tbsp chia · pinch salt · morning: berries or banana + 1 tbsp pumpkin seeds
 
 Everything but the fruit into a jar, stir hard, fridge. Good four days. The yogurt is what takes this from 12g protein to 22g — don't skip it.
 
 ### Dinners — one pan, fifteen minutes on your feet
 
-#### Ginger shrimp stir-fry · 12 min · 480 kcal · 38g protein
-6 oz frozen shrimp, thawed and patted **very** dry · 2 cups vegetables · 1 tbsp avocado oil · 3 tbsp ginger-scallion sauce · ¾ cup rice
+#### Ginger shrimp & edamame stir-fry · 12 min · 500 kcal · 42g protein
+6 oz frozen shrimp, thawed and patted **very** dry · ½ cup shelled edamame · 2 cups vegetables · 1 tbsp avocado oil · 3 tbsp ginger-scallion soy sauce · ¾ cup rice
 
 1. Dry shrimp is non-negotiable — wet shrimp steams grey instead of searing.
 2. Screaming hot pan, shrimp in a single layer, 90 seconds a side, then out.
-3. Vegetables in the same pan, 3–4 minutes, still with bite.
+3. Vegetables and edamame in the same pan, 3–4 minutes, still with bite.
 4. Shrimp back, sauce over, toss 30 seconds. Over rice.
 
-#### Sheet-pan salmon & broccoli · 15 min, 2 active · 500 kcal · 40g protein
-6 oz salmon · 1 broccoli crown · olive oil, S&P · ½ lemon, garlic powder
+#### Miso-glazed salmon & broccoli · 15 min, 3 active · 510 kcal · 40g protein
+6 oz salmon · 1 broccoli crown · 1 tbsp white miso · 1 tbsp soy sauce · 2 tsp honey · 1 tsp grated ginger · olive oil
 
 1. Oven 425°F. Broccoli on the pan with oil and salt, 8 minutes alone.
-2. Push aside, salmon on the same pan with oil, salt, garlic powder. Back in 9–11 minutes.
-3. Done when a fork twists the thickest part apart easily. Lemon at the table.
+2. Whisk miso, soy sauce, honey and ginger into a thick glaze while it roasts.
+3. Push the broccoli aside, salmon on the same pan, spoon half the glaze over. Back in 9–11 minutes.
+4. Brush on the rest for the last 2 minutes. For caramelized edges, flip to broil — but stand there and watch, because honey goes from glazed to burnt in about forty seconds.
+5. Done when a fork twists the thickest part apart easily.
 
 #### Chicken street tacos · 8 min · 520 kcal · 38g protein
 5 oz Tex-Mex chicken, chopped · 3 corn tortillas · shredded cabbage, lime, cilantro, red onion · salsa · ¼ avocado
@@ -191,7 +203,7 @@ Three small corn tortillas run about 150 calories total, against 300 for one big
 5. Drained pasta **into the sauce**, not sauce onto pasta. Splash of pasta water, parmesan, toss.
 
 #### Turkey chili · Sunday batch · 5 servings · 450 kcal · 35g protein
-1 lb 93% ground turkey · 1 onion, 3 cloves garlic · 1 tbsp cumin, 1 tbsp chili powder, 2 tsp smoked paprika · 28 oz crushed tomatoes · 1 can black beans + 1 can kidney beans, rinsed · 1½ cups broth *(check the label for soy)* · serve with Greek yogurt, scallion, lime
+1 lb 93% ground turkey · 1 onion, 3 cloves garlic · 1 tbsp cumin, 1 tbsp chili powder, 2 tsp smoked paprika · 28 oz crushed tomatoes · 1 can black beans + 1 can kidney beans, rinsed · 1½ cups chicken broth · serve with Greek yogurt, scallion, lime
 
 1. Brown the turkey hard — leave it undisturbed until it sticks, then scrape. Color is flavor.
 2. Onion and garlic 4 minutes. Spices 30 seconds until fragrant, which wakes them up.
@@ -200,7 +212,7 @@ Three small corn tortillas run about 150 calories total, against 300 for one big
 5. Freeze two portions the day you make it.
 
 #### Veggie scramble · 6 min · 380 kcal · 24g protein
-2 eggs · roasted vegetables from Sunday · 1 tsp olive oil or butter · 1 slice toast *(check the bread for soy flour)* or ½ avocado
+2 eggs · roasted vegetables from Sunday · 1 tsp olive oil or butter · 1 slice toast or ½ avocado
 
 1. Warm the vegetables first, then pour the beaten eggs over.
 2. Low heat, pull the eggs in from the edges every few seconds.
@@ -208,67 +220,80 @@ Three small corn tortillas run about 150 calories total, against 300 for one big
 
 ---
 
-## 6. Grocery list — about $88 week one
+## 6. What this actually costs
 
-Rough US supermarket estimates. Items marked **[pantry]** are one-time buys that last months; strip those out and ongoing weeks land near **$72**.
+Run exactly as written, this menu costs roughly **$100 a week** — right at the ceiling of your range. The first trip is bigger because you're buying pantry staples that last months.
 
-### Produce — $47
+| Trip | Cost |
+|---|---|
+| First trip — everything below | **$167** |
+| *of which, one-time pantry* | –$33 |
+| *of which, multi-week packages (rice, oats, pasta, shrimp)* | –$19 |
+| **Typical week after that** | **~$100** |
+| **With the trims at the end** | **~$75** |
+
+### Produce & frozen — $43
 - [ ] Broccoli, 2 crowns — 4.00
 - [ ] Bell peppers ×3 — 4.00
-- [ ] Yellow onions ×2, red onion ×1 — 3.00
-- [ ] Zucchini ×1 — 1.50
-- [ ] Green cabbage, 1 small head — 2.50
-- [ ] Romaine or spring mix, 1 tub — 4.00
+- [ ] Onions ×3 (2 yellow, 1 red) — 2.50
+- [ ] Green cabbage, ½ head — 2.00
+- [ ] Romaine, 1 head — 2.50
 - [ ] Cucumbers ×2 — 2.00
-- [ ] Roma tomatoes ×4 — 3.00
-- [ ] Cherry tomatoes, 1 pint — 4.00
+- [ ] Roma tomatoes ×5 — 3.50
 - [ ] Avocados ×2 — 3.00
 - [ ] Lemons ×3, limes ×3 — 3.00
 - [ ] Garlic, 1 head · ginger, 1 knob — 2.00
 - [ ] Scallions & cilantro, 1 bunch each — 3.00
 - [ ] Baby spinach, 1 bag — 3.00
-- [ ] Parsley, small bunch — 1.50
-- [ ] Apples ×4, bananas — 5.50
-- [ ] Berries, fresh or frozen — 5.00
+- [ ] Apples ×4, bananas — 5.00
+- [ ] Frozen berries, 1 bag — 3.50
 
-### Protein — $44
+### Protein — $41
 - [ ] Chicken thighs, boneless skinless, 2½ lb — 8.00
 - [ ] Ground turkey 93%, 1½ lb — 8.00
-- [ ] Frozen shrimp, 1 lb bag — 9.00
-- [ ] Salmon fillets ×2 — 12.00
+- [ ] Frozen shrimp, 1 lb bag *(3 meals, keeps for months)* — 9.00
+- [ ] Salmon fillet ×1 — 6.00
 - [ ] Eggs, 18 count — 5.00
-- [ ] Canned tuna ×1 — *water or olive oil only* — 2.00
+- [ ] Canned tuna ×1 — 2.00
+- [ ] Frozen shelled edamame, 1 lb — 3.00
 
-*Tight week? Drop the salmon, cook chicken breast instead — saves about $8.*
-
-### Dairy — $23
-- [ ] Greek yogurt, plain, 32 oz — 6.00
+### Dairy — $21
+- [ ] Greek yogurt, plain, 40 oz *(plain, not "high protein")* — 7.00
 - [ ] Cottage cheese, 16 oz — 4.00
 - [ ] Feta, 6 oz block in brine — 4.00
-- [ ] Parmesan, small wedge — 5.00
-- [ ] Milk or oat milk — *not almond* — 4.00
+- [ ] Parmesan, small wedge — 3.00
+- [ ] Milk, ½ gallon — *not almond* — 3.00
 
-### Pantry & canned — $31
+### Pantry & canned — $29
 - [ ] Jasmine rice, 2 lb — 4.00
 - [ ] Rolled oats, 18 oz — 4.00
-- [ ] Pasta or chickpea pasta — 2.50
+- [ ] Pasta or chickpea pasta — 2.00
 - [ ] Corn tortillas — 3.00
-- [ ] Black beans ×2, kidney ×1, chickpeas ×1, cannellini ×1 — 6.00
+- [ ] Black beans ×2, kidney ×1, chickpeas ×1 — 5.00
 - [ ] Crushed tomatoes, 28 oz — 2.00
-- [ ] Chicken broth — *check for soy* — 3.00
+- [ ] Chicken broth — 3.00
 - [ ] Salsa, 1 jar — 3.00
-- [ ] Hummus, 1 tub — 4.00
+- [ ] Hummus, 1 tub — 3.00
 
-### One-time buys — $32
-- [ ] Coconut aminos **[pantry]** — 5.50
+### One-time buys — $33
+- [ ] Soy sauce **[pantry]** — 3.00
+- [ ] White miso, small tub *(keeps a year in the fridge)* **[pantry]** — 4.00
 - [ ] Rice vinegar **[pantry]** — 3.00
-- [ ] Toasted sesame oil, *pure not blended* **[pantry]** — 4.50
+- [ ] Toasted sesame oil **[pantry]** — 4.50
 - [ ] Chia seeds **[pantry]** — 5.00
-- [ ] Pumpkin & sunflower seeds **[pantry]** — 5.00
+- [ ] Pumpkin & sunflower seeds **[pantry]** — 4.50
 - [ ] Sunflower seed butter **[pantry]** — 6.00
-- [ ] Cumin, chili powder, smoked paprika, oregano **[pantry]**
-- [ ] Olive oil, avocado oil, Dijon, honey **[pantry]**
-- [ ] Dark chocolate 85%, *soy-free label* — 3.00
+- [ ] Dark chocolate, 85% — 3.00
+- [ ] Cumin, chili powder, smoked paprika, oregano, olive oil, Dijon, honey **[if needed]**
+
+### The $75 week — what to cut and what it costs you
+
+- **Frozen broccoli and peppers instead of fresh** — saves $5. They roast slightly softer, which nobody notices in a bowl.
+- **Skip the salmon and shrimp** — saves $15. Buy an extra pound of chicken thighs ($3) and use the ginger-soy sauce on those instead. This is the single biggest lever.
+- **Drop the feta and parmesan** — saves $7. Costs you real flavor, so cut this one last.
+- **Store brand yogurt, beans, tortillas** — saves $5.
+
+*Prices are rough US supermarket estimates and vary a lot by region and store. Treat the ratios as reliable and the absolute numbers as a starting guess — check your own receipt after week one.*
 
 ---
 
@@ -276,18 +301,18 @@ Rough US supermarket estimates. Items marked **[pantry]** are one-time buys that
 
 | Instead of | Use | What it buys you |
 |---|---|---|
-| Soy sauce, tamari, teriyaki | Coconut aminos | Soy-free, about a third less sodium |
-| Almond milk | Oat or dairy milk | Allergen out; dairy adds 8g protein a cup |
+| A protein shake | Greek yogurt, cottage cheese, or a cup of edamame | No concentrated whey, and food keeps you full where liquid doesn't |
+| "High protein" yogurt | Plain Greek yogurt | The high-protein versions are the ones that add whey back in |
+| Almond milk | Dairy or oat milk | Allergen out; dairy adds 8g protein a cup |
 | Sour cream | Plain Greek yogurt | Twice the protein, a third of the fat |
-| Mayo and bottled dressing | Olive oil, lemon, Dijon in a jar | Dodges soybean oil; 30 seconds to make |
-| "Vegetable oil" | Olive or avocado oil | Vegetable oil is usually soybean oil |
+| Bottled salad dressing | Olive oil, lemon, Dijon in a jar | 30 seconds, a third of the calories, tastes better |
 | A full portion of rice | Half rice, half riced cauliflower | Same volume, roughly half the carbs |
-| Large flour tortilla | Three small corn tortillas | ~150 fewer calories, and corn is usually soy-free |
+| Large flour tortilla | Three small corn tortillas | ~150 fewer calories, and they actually char |
 | Tortilla chips | Corn tortillas cut and baked | Same crunch, a fraction of the oil |
 | Store granola | Oats, pumpkin seeds, cinnamon | Skips both the almonds and the added sugar |
 | 80/20 ground beef | 93% turkey or 93% beef | ~120 fewer calories per serving, same chili |
 | Croutons | Toasted pumpkin seeds | Crunch plus protein instead of crunch plus bread |
-| Milk chocolate | 85% dark, soy-free label | Most milk chocolate carries soy lecithin |
+| Chips with a sandwich | A cup of edamame in the pod | 11g protein, 8g fiber, and it takes a while to eat |
 | Juice and soda | Sparkling water with lime | The easiest 150 calories you'll ever cut |
 | Chicken breast for prep | Chicken thighs | Doesn't turn to rubber reheated on day four |
 
@@ -303,6 +328,7 @@ Rough US supermarket estimates. Items marked **[pantry]** are one-time buys that
 - **Reheat rice with a splash of water and a lid.** It comes back genuinely fresh.
 - **Never prep avocado, dressed greens, or anything fried.** One slimy container is enough to make you quit the system.
 - **Dry your greens properly.** Water on leaves is what turns a tub of lettuce to slime by Wednesday.
+- **Keep frozen edamame in the door.** Three minutes in boiling water is the fastest 11g of protein in the house, and it rescues any meal that came out light.
 
 **Keeping the habit**
 
@@ -319,14 +345,14 @@ Rough US supermarket estimates. Items marked **[pantry]** are one-time buys that
 Don't rebuild the plan. The structure — two-way protein, roasted vegetable tray, cooked grain, one pot of something, two sauces — is what makes the week work. Swap what goes in each slot:
 
 - **Protein:** pork tenderloin, chicken breast, white fish, or a whole roast chicken.
-- **Seasonings:** Greek → za'atar or harissa; Tex-Mex → chipotle-lime or a jerk rub.
+- **Seasonings:** Greek → za'atar or harissa; Tex-Mex → chipotle-lime, a jerk rub, or a miso-honey glaze.
 - **Grain:** quinoa, farro, or roasted potatoes.
 - **The pot:** white chicken chili, lentil soup, chunky minestrone.
-- **Sauces:** keep the yogurt base, change what's in it — dill and cucumber one week, chipotle and lime the next.
+- **Sauces:** keep the two-sauce habit, change what's in them — dill and cucumber yogurt one week, miso-ginger the next.
 - **Vegetables:** whatever is cheap that week. The tray doesn't care.
 
 Cook one new recipe a week if you feel like it, and let the good ones join the rotation. That's how this stops being a meal plan and turns into how you cook.
 
 ---
 
-*Calorie and protein figures are planning estimates, not measurements; prices are rough US supermarket averages. Always check labels yourself — formulations change. This is general food guidance, not medical or dietetic advice.*
+*Calorie and protein figures are planning estimates, not measurements; prices are rough US supermarket averages that vary by region. Always check labels yourself — formulations change. This is general food guidance, not medical or dietetic advice.*
