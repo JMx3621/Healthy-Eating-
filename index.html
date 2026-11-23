@@ -315,8 +315,65 @@ const RECIPES = {
     n: 'Lentil soup — week 6 challenge', t: 'Batch', k: 420, p: 28, tag: 'batch',
     i: ['1 cup canned lentils, rinsed hard', '3 carrots, 2 celery, 2 zucchini', '2 tbsp garlic oil, scallion greens', '1 tsp smoked paprika, 1 tsp thyme, bay leaf', '1 can diced tomatoes, 5 cups water + salt', '2 handfuls spinach'],
     s: ['This one is a deliberate challenge for week 6, not a baseline meal. Do not cook it earlier.', 'Canned and well rinsed, not dried — the rinsing takes a meaningful amount of the trouble down the drain.', 'Vegetables in the garlic oil 6 minutes. Spices 30 seconds. Lentils, tomatoes, water, bay leaf.', 'Simmer 20 minutes. Spinach at the end. Salt properly.']
+  },
+
+  /* ---------- Five ingredients or fewer ----------
+     q = how many ingredients count. Salt, pepper, oil and garlic oil are free.
+     Every one is baseline-safe: no onion, garlic cloves, honey, wheat bread,
+     lactose, almonds, melon or whey. Swap any of them into a day freely. */
+  'q-egg-cups': {
+    n: 'Spinach &amp; feta egg cups', t: '20 min', k: 290, p: 22, tag: 'quick', q: 4,
+    i: ['6 eggs', '2 handfuls baby spinach, chopped', '½ red pepper, diced small', '¼ cup crumbled feta'],
+    s: ['Oven 375°F. Oil six cups of a muffin tin properly — egg welds itself to bare metal.', 'Spinach, pepper and feta into the cups. Beat the eggs with salt and pepper and pour over.', '18–20 minutes, until the middles no longer wobble.', 'Three cups is one breakfast. The other three keep four days in the fridge — 40 seconds in the microwave.']
+  },
+  'q-pancakes': {
+    n: 'Cottage cheese blueberry pancakes', t: '12 min', k: 390, p: 30, tag: 'quick', q: 4,
+    i: ['½ cup lactose-free cottage cheese', '2 eggs', '⅓ cup rolled oats', '½ cup blueberries'],
+    s: ['Cottage cheese, eggs and oats into a blender, 30 seconds until smooth. Let it sit 2 minutes to thicken.', 'Medium-low pan, a little oil. Small pancakes — palm-sized flip far better than big ones.', 'Blueberries dropped onto the wet tops, not stirred into the batter, or everything turns purple.', '2 minutes until the edges look dry, flip, 1 more minute.', '30g of protein with no powder anywhere near it.']
+  },
+  'q-hash': {
+    n: 'Potato, pepper &amp; egg hash', t: '15 min', k: 470, p: 25, tag: 'quick', q: 5,
+    i: ['1 medium potato, diced small', '½ red pepper, diced', '2 eggs', 'Greens of 2 scallions', '1 oz cheddar, grated'],
+    s: ['Potato into a hot oiled pan with salt. Spread out, lid on, 6 minutes — the lid steams it through.', 'Lid off, pepper in, turn up the heat and leave it alone 3 minutes to crisp.', 'Two wells, an egg in each, cheddar over the lot, lid back on 3 minutes.', 'Scallion greens over the top. Works as breakfast or a lazy dinner.']
+  },
+  'q-tuna-melt': {
+    n: 'Open tuna melt', t: '6 min', k: 370, p: 37, tag: 'quick', q: 5,
+    i: ['1 can tuna, drained', '1 tsp Dijon', '1 slice sourdough', '1 tomato, sliced', '1 oz cheddar, grated'],
+    s: ['Mix the tuna with the Dijon, salt and plenty of pepper.', 'Toast the sourdough lightly first, so it holds up under the tuna.', 'Tuna, tomato, cheddar, in that order.', 'Under the broiler 2–3 minutes until the cheese bubbles. Watch it.', 'Proper slow-fermented sourdough, not sandwich bread — the long ferment is what makes it gentle.']
+  },
+  'q-caprese-chicken': {
+    n: 'Caprese chicken plate', t: '5 min', k: 410, p: 40, tag: 'quick', q: 5,
+    i: ['5 oz cooked chicken from Sunday, sliced', '2 tomatoes, sliced thick', '1 oz fresh mozzarella', 'Handful fresh basil', '1 tbsp balsamic vinegar'],
+    s: ['Chicken warm or cold — both work.', 'Fan out the tomato, tear the mozzarella over it, salt the tomatoes properly. Unsalted tomato tastes of nothing.', 'Chicken alongside, basil torn over everything.', 'Balsamic and a thread of olive oil last.', 'Fresh mozzarella is naturally very low in lactose. One tablespoon of balsamic is fine; do not drench it.']
+  },
+  'q-lettuce-cups': {
+    n: 'Soy-ginger turkey lettuce cups', t: '10 min', k: 340, p: 33, tag: 'quick', q: 5,
+    i: ['5 oz 93% ground turkey', '1 tsp grated ginger', '1½ tbsp soy sauce', '1 carrot, grated', '1 head butter lettuce'],
+    s: ['Turkey into a hot oiled pan. Leave it alone until it browns, then break it up small.', 'Ginger in for 30 seconds once the meat has colour.', 'Soy sauce in, bubble 60 seconds until it clings.', 'Spoon into lettuce leaves, carrot on top. Eat with your hands.', 'Light for a lunch. Add ¾ cup of Sunday rice if you are training that day (+160 kcal).']
+  },
+  'q-salmon-potatoes': {
+    n: 'Lemon-dill salmon, potatoes &amp; green beans', t: '25 min', k: 540, p: 40, tag: 'quick', q: 5,
+    i: ['6 oz salmon fillet', '5 oz baby potatoes, halved', '2 handfuls green beans', '1 lemon', 'Small bunch fresh dill'],
+    s: ['Oven 425°F. Potatoes on the pan with oil and salt, cut side down, 12 minutes alone.', 'Green beans on, salmon in the middle, lemon slices on the salmon. 10–12 minutes more.', 'Done when a fork twists the thickest part apart easily.', 'Chopped dill and the rest of the lemon squeezed over everything. One pan to wash.']
+  },
+  'q-dijon-chicken': {
+    n: 'Maple-Dijon chicken &amp; carrots', t: '30 min', k: 420, p: 38, tag: 'quick', q: 4,
+    i: ['6 oz boneless chicken thighs', '1 tbsp Dijon', '2 tsp maple syrup', '3 carrots, in sticks'],
+    s: ['Oven 425°F. Whisk the Dijon and maple with salt and pepper.', 'Carrots on the pan with oil and salt. Chicken on top, glaze brushed over.', '22–25 minutes to 165°F. The glaze catches at the edges — that is the good part.', 'Doubles or triples happily for the prep tray.']
+  },
+  'q-pork-bokchoy': {
+    n: 'Soy-maple pork chop &amp; bok choy', t: '15 min', k: 390, p: 40, tag: 'quick', q: 5,
+    i: ['6 oz boneless pork chop', '1 tbsp soy sauce', '1 tsp maple syrup', '1 tsp grated ginger', '2 heads baby bok choy, halved'],
+    s: ['Pat the chop dry and salt it. Hot oiled pan, 4 minutes a side to 145°F. Out to rest.', 'Bok choy cut side down in the same pan, 2 minutes until charred.', 'Soy, maple and ginger in, toss 30 seconds — it glazes the greens and lifts the pork bits off the pan.', 'Slice the pork, pour the pan over. With ¾ cup rice it is +160 kcal.']
+  },
+  'q-yogurt-bark': {
+    n: 'Strawberry yogurt bark', t: '5 min + freeze', k: 180, p: 11, tag: 'quick', q: 4,
+    i: ['1 cup lactose-free Greek yogurt', '1 tsp maple syrup', '6 strawberries, sliced', '1 oz 85% dark chocolate, chopped'],
+    s: ['Stir the maple into the yogurt. Spread ½ inch thick on a parchment-lined tray.', 'Strawberries and chocolate pressed into the top.', 'Freezer 2 hours, then snap into pieces. Keep it frozen — it softens in about ten minutes.', 'Makes 2 servings. A sweet thing that is mostly protein.']
   }
 };
+
+const QUICK_NOTE = 'Salt, pepper and oil — garlic oil included — do not count. Every one is safe during the baseline weeks and none needs Sunday prep, so any of them can replace a planned meal on a day the plan feels like too much.';
 
 const SNACKS = {
   'cottage':  { n: 'Lactose-free cottage cheese + strawberries', k: 180 },
@@ -857,16 +914,28 @@ function renderFood(){
   });
   out += '</div>';
 
-  out += '<h2 class="sect">All recipes</h2><div class="card">';
+  function recipeRow(id){
+    var r = RECIPES[id];
+    return '<div class="row"><div class="time">'+r.t.replace(' min','m')+'</div>'
+      + '<div class="what"><b class="link" data-recipe="'+id+'">'+r.n+'</b>'
+      + '<span>'+(r.q?r.q+' ingredients · ':'')+(r.k?r.k+' kcal · '+r.p+'g protein':'')+'</span></div><div></div></div>';
+  }
   var seen = {};
+
+  out += '<h2 class="sect">Five ingredients or fewer</h2><div class="card">';
+  out += '<p class="muted">'+QUICK_NOTE+'</p>';
+  Object.keys(RECIPES).forEach(function(id){
+    if (RECIPES[id].tag !== 'quick') return; seen[id] = 1;
+    out += recipeRow(id);
+  });
+  out += '</div>';
+
+  out += '<h2 class="sect">All recipes</h2><div class="card">';
   ['breakfast','lunch','dinner','batch'].forEach(function(tag){
     out += '<p class="eyebrow" style="margin-top:14px">'+tag+'</p>';
     Object.keys(RECIPES).forEach(function(id){
-      var r = RECIPES[id];
-      if (r.tag !== tag || seen[id]) return; seen[id] = 1;
-      out += '<div class="row"><div class="time">'+r.t.replace(' min','m')+'</div>'
-        + '<div class="what"><b class="link" data-recipe="'+id+'">'+r.n+'</b>'
-        + '<span>'+(r.k?r.k+' kcal · '+r.p+'g protein':'')+'</span></div><div></div></div>';
+      if (RECIPES[id].tag !== tag || seen[id]) return; seen[id] = 1;
+      out += recipeRow(id);
     });
   });
   out += '</div>';
@@ -990,7 +1059,7 @@ function openRecipe(id){
   var h = '<div class="sheet-hd"><div><h3>'+r.n+'</h3>'
     + '<p class="muted num">'+r.t+(r.k?' · '+r.k+' kcal · '+r.p+'g protein':'')+'</p></div>'
     + '<button class="closeb" id="sheetClose" aria-label="Close">✕</button></div>';
-  h += '<p class="eyebrow" style="margin-top:16px">Ingredients</p><ul>';
+  h += '<p class="eyebrow" style="margin-top:16px">Ingredients'+(r.q?' · '+r.q+' + salt, pepper, oil':'')+'</p><ul>';
   r.i.forEach(function(x){ h += '<li>'+x+'</li>'; });
   h += '</ul><p class="eyebrow" style="margin-top:16px">Method</p><ol>';
   r.s.forEach(function(x){ h += '<li>'+x+'</li>'; });

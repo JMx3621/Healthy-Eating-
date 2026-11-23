@@ -454,16 +454,28 @@ function renderFood(){
   });
   out += '</div>';
 
-  out += '<h2 class="sect">All recipes</h2><div class="card">';
+  function recipeRow(id){
+    var r = RECIPES[id];
+    return '<div class="row"><div class="time">'+r.t.replace(' min','m')+'</div>'
+      + '<div class="what"><b class="link" data-recipe="'+id+'">'+r.n+'</b>'
+      + '<span>'+(r.q?r.q+' ingredients · ':'')+(r.k?r.k+' kcal · '+r.p+'g protein':'')+'</span></div><div></div></div>';
+  }
   var seen = {};
+
+  out += '<h2 class="sect">Five ingredients or fewer</h2><div class="card">';
+  out += '<p class="muted">'+QUICK_NOTE+'</p>';
+  Object.keys(RECIPES).forEach(function(id){
+    if (RECIPES[id].tag !== 'quick') return; seen[id] = 1;
+    out += recipeRow(id);
+  });
+  out += '</div>';
+
+  out += '<h2 class="sect">All recipes</h2><div class="card">';
   ['breakfast','lunch','dinner','batch'].forEach(function(tag){
     out += '<p class="eyebrow" style="margin-top:14px">'+tag+'</p>';
     Object.keys(RECIPES).forEach(function(id){
-      var r = RECIPES[id];
-      if (r.tag !== tag || seen[id]) return; seen[id] = 1;
-      out += '<div class="row"><div class="time">'+r.t.replace(' min','m')+'</div>'
-        + '<div class="what"><b class="link" data-recipe="'+id+'">'+r.n+'</b>'
-        + '<span>'+(r.k?r.k+' kcal · '+r.p+'g protein':'')+'</span></div><div></div></div>';
+      if (RECIPES[id].tag !== tag || seen[id]) return; seen[id] = 1;
+      out += recipeRow(id);
     });
   });
   out += '</div>';
@@ -587,7 +599,7 @@ function openRecipe(id){
   var h = '<div class="sheet-hd"><div><h3>'+r.n+'</h3>'
     + '<p class="muted num">'+r.t+(r.k?' · '+r.k+' kcal · '+r.p+'g protein':'')+'</p></div>'
     + '<button class="closeb" id="sheetClose" aria-label="Close">✕</button></div>';
-  h += '<p class="eyebrow" style="margin-top:16px">Ingredients</p><ul>';
+  h += '<p class="eyebrow" style="margin-top:16px">Ingredients'+(r.q?' · '+r.q+' + salt, pepper, oil':'')+'</p><ul>';
   r.i.forEach(function(x){ h += '<li>'+x+'</li>'; });
   h += '</ul><p class="eyebrow" style="margin-top:16px">Method</p><ol>';
   r.s.forEach(function(x){ h += '<li>'+x+'</li>'; });
